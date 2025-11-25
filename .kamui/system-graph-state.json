@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "projectPath": "/Users/rnrnstar/github/ProOneTech",
+  "projectRootName": "ProOneTech",
+  "graphRenderingMode": "normal",
+  "linkDisplayMode": "all",
+  "graphStats": {
+    "totalNodes": 3,
+    "folders": 2,
+    "files": 1,
+    "images": 0,
+    "videos": 0,
+    "audio": 0,
+    "code": 0,
+    "text": 1,
+    "html": 0,
+    "yaml": 0,
+    "json": 0,
+    "other": 0,
+    "totalLines": 0,
+    "maxLines": 0
+  },
+  "directoryTree": {
+    "name": "ProOneTech",
+    "type": "directory",
+    "path": "ProOneTech",
+    "children": [
+      {
+        "name": ".kamui",
+        "type": "directory",
+        "path": ".kamui",
+        "children": [],
+        "hasMore": true
+      },
+      {
+        "name": "README.md",
+        "type": "file",
+        "path": "README.md"
+      }
+    ]
+  },
+  "graphData": {
+    "nodes": [
+      {
+        "id": "ProOneTech",
+        "name": "ProOneTech",
+        "path": "ProOneTech",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": null,
+        "childFileCount": 1,
+        "x": -2.4607741090869313,
+        "y": 9.435563189176772,
+        "z": -3.5373363639539237,
+        "vx": -0.010628775111265767,
+        "vy": 0.011939583086199706,
+        "vz": -0.004605552110130347
+      },
+      {
+        "id": "ProOneTech/.kamui",
+        "name": ".kamui",
+        "path": "ProOneTech/.kamui",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "ProOneTech",
+        "childFileCount": 0,
+        "x": -27.617313521432067,
+        "y": -12.189387741387959,
+        "z": 4.039146198172981,
+        "vx": -0.00846015782542381,
+        "vy": 0.009844859533390541,
+        "vz": -0.0037923021705593605
+      },
+      {
+        "id": "ProOneTech/README.md",
+        "name": "README.md",
+        "path": "ProOneTech/README.md",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#3498db",
+        "baseColor": "#3498db",
+        "originalColor": "#3498db",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "ProOneTech",
+        "childFileCount": 0,
+        "x": 30.050068890934977,
+        "y": 2.793682731402878,
+        "z": -0.5170560648361134,
+        "vx": -0.008929806647325386,
+        "vy": 0.018073736572101064,
+        "vz": -0.00684837633636672
+      }
+    ],
+    "links": [
+      {
+        "source": "ProOneTech",
+        "target": "ProOneTech/.kamui",
+        "type": "tree"
+      },
+      {
+        "source": "ProOneTech",
+        "target": "ProOneTech/README.md",
+        "type": "tree"
+      }
+    ]
+  },
+  "trackedFiles": [
+    "README.md"
+  ],
+  "uiState": {
+    "expandedDirs": [
+      "ProOneTech",
+      "ProOneTech/ProOneTech",
+      "ProOneTech/.kamui",
+      "ProOneTech/ProOneTech/.kamui",
+      "ProOneTech/.kamui/apps",
+      "ProOneTech/ProOneTech/.kamui/apps",
+      "ProOneTech/.kamui/gantte",
+      "ProOneTech/ProOneTech/.kamui/gantte",
+      "ProOneTech/.kamui/prompt",
+      "ProOneTech/ProOneTech/.kamui/prompt"
+    ],
+    "selectedPath": null
+  },
+  "directoryTreeMeta": {
+    "mode": "full",
+    "maxDepthApplied": 10,
+    "maxEntriesPerDirectory": 0,
+    "isPartial": false
+  },
+  "gitHistoryMeta": {
+    "mode": "full",
+    "isPartial": false,
+    "branchPulse": {
+      "generatedAt": 1764072955073,
+      "targets": [
+        "main",
+        "master"
+      ],
+      "statsByBranch": {
+        "main": {
+          "branch": "main",
+          "head": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "baseRef": "origin/main",
+          "baseHead": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "mergeBase": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "divergence": {
+            "aheadCount": 0,
+            "fileCount": 0
+          },
+          "baseline": {
+            "aheadCount": 0,
+            "behindCount": 0,
+            "fileCount": 0
+          },
+          "upstream": null
+        }
+      }
+    }
+  },
+  "gitHistoryState": {
+    "selectedTimelineIndex": 1,
+    "activeCommitHash": null,
+    "entries": [
+      {
+        "type": "live",
+        "label": "現在のコードベース",
+        "files": [],
+        "branch": "main",
+        "targetCommitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech",
+        "timestamp": 1764072955094,
+        "lane": 0,
+        "branchLabel": "main",
+        "branchTags": [
+          "main"
+        ],
+        "isDefaultWorktree": true,
+        "branchColor": "#4f85e8",
+        "index": 0
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ (5)",
+        "files": [
+          ".kamui/apps/kamui-os-intro-1732171200.css",
+          ".kamui/apps/kamui-os-intro-1732171200.html",
+          ".kamui/apps/kamui-os-intro-1732171200.js",
+          ".kamui/gantte/test.yaml",
+          ".kamui/prompt/merge-prompt.txt"
+        ],
+        "branch": "main",
+        "targetCommitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech",
+        "timestamp": 1764072955094,
+        "sortOrder": 0,
+        "lane": 0,
+        "branchColor": "#4f85e8",
+        "index": 1
+      },
+      {
+        "type": "commit",
+        "label": "Initial commit",
+        "commit": {
+          "hash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "subject": "Initial commit",
+          "author": "rnrnstar",
+          "timestamp": 1764072914,
+          "parents": [],
+          "parent": null,
+          "refs": "HEAD -> main, origin/main, origin/HEAD",
+          "branches": [
+            "HEAD -> main",
+            "origin/main",
+            "origin/HEAD",
+            "main"
+          ]
+        },
+        "commitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+        "lane": 0,
+        "parentLinks": [],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [
+          "main"
+        ],
+        "worktrees": [
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech",
+            "head": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+            "branch": "main",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": ".kamui/apps/kamui-os-intro-1732171200.css",
+                  "status": "untracked",
+                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.css",
+                  "timestamp": 1764072954955
+                },
+                {
+                  "path": ".kamui/apps/kamui-os-intro-1732171200.html",
+                  "status": "untracked",
+                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.html",
+                  "timestamp": 1764072954955
+                },
+                {
+                  "path": ".kamui/apps/kamui-os-intro-1732171200.js",
+                  "status": "untracked",
+                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.js",
+                  "timestamp": 1764072954955
+                },
+                {
+                  "path": ".kamui/gantte/test.yaml",
+                  "status": "untracked",
+                  "rawPath": ".kamui/gantte/test.yaml",
+                  "timestamp": 1764072954955
+                },
+                {
+                  "path": ".kamui/prompt/merge-prompt.txt",
+                  "status": "untracked",
+                  "rawPath": ".kamui/prompt/merge-prompt.txt",
+                  "timestamp": 1764072954955
+                }
+              ],
+              "capturedAt": 1764072954955
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech",
+            "lane": 0
+          }
+        ],
+        "index": 2
+      },
+      {
+        "type": "empty",
+        "label": "初期状態 (初回コミット以前)",
+        "files": [],
+        "marker": "pre-history",
+        "index": 3
+      }
+    ]
+  },
+  "projectRoot": "/Users/rnrnstar/github/ProOneTech",
+  "savedAt": 1764072957624
+}

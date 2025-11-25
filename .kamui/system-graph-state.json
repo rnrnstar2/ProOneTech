@@ -5,9 +5,9 @@
   "graphRenderingMode": "normal",
   "linkDisplayMode": "all",
   "graphStats": {
-    "totalNodes": 3,
-    "folders": 2,
-    "files": 1,
+    "totalNodes": 5,
+    "folders": 3,
+    "files": 2,
     "images": 0,
     "videos": 0,
     "audio": 0,
@@ -16,7 +16,7 @@
     "html": 0,
     "yaml": 0,
     "json": 0,
-    "other": 0,
+    "other": 1,
     "totalLines": 0,
     "maxLines": 0
   },
@@ -31,6 +31,18 @@
         "path": ".kamui",
         "children": [],
         "hasMore": true
+      },
+      {
+        "name": ".worktrees",
+        "type": "directory",
+        "path": ".worktrees",
+        "children": [],
+        "hasMore": true
+      },
+      {
+        "name": "-.WordPress.2025-11-25.xml",
+        "type": "file",
+        "path": "-.WordPress.2025-11-25.xml"
       },
       {
         "name": "README.md",
@@ -55,13 +67,13 @@
         "glowIntensity": 0.18,
         "highlighted": false,
         "parentPath": null,
-        "childFileCount": 1,
-        "x": -2.4607741090869313,
-        "y": 9.435563189176772,
-        "z": -3.5373363639539237,
-        "vx": -0.010628775111265767,
-        "vy": 0.011939583086199706,
-        "vz": -0.004605552110130347
+        "childFileCount": 2,
+        "x": 2.2168679347727522,
+        "y": -3.6147370920253263,
+        "z": 1.8327692421778683,
+        "vx": 0.004851401090065334,
+        "vy": -0.011723132579900333,
+        "vz": 0.0017389258324918228
       },
       {
         "id": "ProOneTech/.kamui",
@@ -78,12 +90,56 @@
         "highlighted": false,
         "parentPath": "ProOneTech",
         "childFileCount": 0,
-        "x": -27.617313521432067,
-        "y": -12.189387741387959,
-        "z": 4.039146198172981,
-        "vx": -0.00846015782542381,
-        "vy": 0.009844859533390541,
-        "vz": -0.0037923021705593605
+        "x": 0.809928442712538,
+        "y": -32.29939702085721,
+        "z": -18.1401993186791,
+        "vx": 0.005685864983666088,
+        "vy": -0.01239074487929272,
+        "vz": 0.003040966923056235
+      },
+      {
+        "id": "ProOneTech/.worktrees",
+        "name": ".worktrees",
+        "path": "ProOneTech/.worktrees",
+        "type": "directory",
+        "lines": 0,
+        "val": 14,
+        "color": "#4d515a",
+        "baseColor": "#4ec9b0",
+        "originalColor": "#4ec9b0",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": false,
+        "parentPath": "ProOneTech",
+        "childFileCount": 0,
+        "x": -16.09729420824123,
+        "y": 20.818357351066826,
+        "z": -15.287238578088035,
+        "vx": 0.005463100578535744,
+        "vy": -0.010162762304683057,
+        "vz": 0.003684343810728984
+      },
+      {
+        "id": "ProOneTech/-.WordPress.2025-11-25.xml",
+        "name": "-.WordPress.2025-11-25.xml",
+        "path": "ProOneTech/-.WordPress.2025-11-25.xml",
+        "type": "file",
+        "lines": 0,
+        "val": 6,
+        "color": "#57606f",
+        "baseColor": "#57606f",
+        "originalColor": "#57606f",
+        "defaultGlow": 0.18,
+        "glowIntensity": 0.18,
+        "highlighted": true,
+        "parentPath": "ProOneTech",
+        "childFileCount": 0,
+        "x": -17.623145328857102,
+        "y": -0.6698508599884261,
+        "z": 29.825864657009937,
+        "vx": 0.00987395428914833,
+        "vy": -0.010600546384276112,
+        "vz": 0.0055413641178841365
       },
       {
         "id": "ProOneTech/README.md",
@@ -100,12 +156,12 @@
         "highlighted": false,
         "parentPath": "ProOneTech",
         "childFileCount": 0,
-        "x": 30.050068890934977,
-        "y": 2.793682731402878,
-        "z": -0.5170560648361134,
-        "vx": -0.008929806647325386,
-        "vy": 0.018073736572101064,
-        "vz": -0.00684837633636672
+        "x": 30.72496193549236,
+        "y": 15.708928604520631,
+        "z": 1.791035456195025,
+        "vx": 0.00544445493790214,
+        "vy": -0.01182183113534734,
+        "vz": 0.008225857931528777
       }
     ],
     "links": [
@@ -116,12 +172,29 @@
       },
       {
         "source": "ProOneTech",
+        "target": "ProOneTech/.worktrees",
+        "type": "tree"
+      },
+      {
+        "source": "ProOneTech",
+        "target": "ProOneTech/-.WordPress.2025-11-25.xml",
+        "type": "tree"
+      },
+      {
+        "source": "ProOneTech",
         "target": "ProOneTech/README.md",
         "type": "tree"
       }
     ]
   },
   "trackedFiles": [
+    ".kamui/apps/kamui-os-intro-1732171200.css",
+    ".kamui/apps/kamui-os-intro-1732171200.html",
+    ".kamui/apps/kamui-os-intro-1732171200.js",
+    ".kamui/gantte/test.yaml",
+    ".kamui/model-versions-cache.json",
+    ".kamui/prompt/merge-prompt.txt",
+    ".kamui/system-graph-state.json",
     "README.md"
   ],
   "uiState": {
@@ -135,7 +208,19 @@
       "ProOneTech/.kamui/gantte",
       "ProOneTech/ProOneTech/.kamui/gantte",
       "ProOneTech/.kamui/prompt",
-      "ProOneTech/ProOneTech/.kamui/prompt"
+      "ProOneTech/ProOneTech/.kamui/prompt",
+      "ProOneTech/kamui",
+      "ProOneTech/ProOneTech/kamui",
+      "task-1764073163851-5aa65d",
+      "task-1764073166474-1e93ba",
+      "task-1764073168994-eff9a7",
+      "task-1764073171538-4bf143",
+      "task-1764073316320-2dd9fa",
+      "task-1764073318822-76fafd",
+      "task-1764073321359-34c131",
+      "task-1764073323944-1aa208",
+      "ProOneTech/.kamui/manager",
+      "ProOneTech/ProOneTech/.kamui/manager"
     ],
     "selectedPath": null
   },
@@ -149,18 +234,90 @@
     "mode": "full",
     "isPartial": false,
     "branchPulse": {
-      "generatedAt": 1764072955073,
+      "generatedAt": 1764073665161,
       "targets": [
         "main",
+        "task/task-1764073316320-2dd9fa",
+        "task/task-1764073318822-76fafd",
+        "task/task-1764073321359-34c131",
+        "task/task-1764073323944-1aa208",
         "master"
       ],
       "statsByBranch": {
+        "task/task-1764073318822-76fafd": {
+          "branch": "task/task-1764073318822-76fafd",
+          "head": "841dc7546d77858a15a7753936935933374a45a1",
+          "baseRef": "main",
+          "baseHead": "841dc7546d77858a15a7753936935933374a45a1",
+          "mergeBase": "841dc7546d77858a15a7753936935933374a45a1",
+          "divergence": {
+            "aheadCount": 0,
+            "fileCount": 0
+          },
+          "baseline": {
+            "aheadCount": 0,
+            "behindCount": 0,
+            "fileCount": 0
+          },
+          "upstream": null
+        },
+        "task/task-1764073321359-34c131": {
+          "branch": "task/task-1764073321359-34c131",
+          "head": "841dc7546d77858a15a7753936935933374a45a1",
+          "baseRef": "main",
+          "baseHead": "841dc7546d77858a15a7753936935933374a45a1",
+          "mergeBase": "841dc7546d77858a15a7753936935933374a45a1",
+          "divergence": {
+            "aheadCount": 0,
+            "fileCount": 0
+          },
+          "baseline": {
+            "aheadCount": 0,
+            "behindCount": 0,
+            "fileCount": 0
+          },
+          "upstream": null
+        },
+        "task/task-1764073316320-2dd9fa": {
+          "branch": "task/task-1764073316320-2dd9fa",
+          "head": "841dc7546d77858a15a7753936935933374a45a1",
+          "baseRef": "main",
+          "baseHead": "841dc7546d77858a15a7753936935933374a45a1",
+          "mergeBase": "841dc7546d77858a15a7753936935933374a45a1",
+          "divergence": {
+            "aheadCount": 0,
+            "fileCount": 0
+          },
+          "baseline": {
+            "aheadCount": 0,
+            "behindCount": 0,
+            "fileCount": 0
+          },
+          "upstream": null
+        },
         "main": {
           "branch": "main",
-          "head": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "head": "841dc7546d77858a15a7753936935933374a45a1",
           "baseRef": "origin/main",
-          "baseHead": "ae73a880793423f565dc90c60555af23c6fa3bf0",
-          "mergeBase": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "baseHead": "841dc7546d77858a15a7753936935933374a45a1",
+          "mergeBase": "841dc7546d77858a15a7753936935933374a45a1",
+          "divergence": {
+            "aheadCount": 0,
+            "fileCount": 0
+          },
+          "baseline": {
+            "aheadCount": 0,
+            "behindCount": 0,
+            "fileCount": 0
+          },
+          "upstream": null
+        },
+        "task/task-1764073323944-1aa208": {
+          "branch": "task/task-1764073323944-1aa208",
+          "head": "841dc7546d77858a15a7753936935933374a45a1",
+          "baseRef": "main",
+          "baseHead": "841dc7546d77858a15a7753936935933374a45a1",
+          "mergeBase": "841dc7546d77858a15a7753936935933374a45a1",
           "divergence": {
             "aheadCount": 0,
             "fileCount": 0
@@ -184,9 +341,9 @@
         "label": "現在のコードベース",
         "files": [],
         "branch": "main",
-        "targetCommitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+        "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
         "worktreePath": "/Users/rnrnstar/github/ProOneTech",
-        "timestamp": 1764072955094,
+        "timestamp": 1764073673053,
         "lane": 0,
         "branchLabel": "main",
         "branchTags": [
@@ -200,20 +357,508 @@
         "type": "unstaged",
         "label": "未ステージ (5)",
         "files": [
-          ".kamui/apps/kamui-os-intro-1732171200.css",
-          ".kamui/apps/kamui-os-intro-1732171200.html",
-          ".kamui/apps/kamui-os-intro-1732171200.js",
-          ".kamui/gantte/test.yaml",
-          ".kamui/prompt/merge-prompt.txt"
+          ".kamui/system-graph-state.json",
+          "-.WordPress.2025-11-25.xml",
+          ".kamui/manager/202511252124_monitor_tasks.html",
+          ".kamui/prompt/launch-prompt.txt",
+          ".kamui/tasks-state.json"
         ],
         "branch": "main",
-        "targetCommitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+        "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
         "worktreePath": "/Users/rnrnstar/github/ProOneTech",
-        "timestamp": 1764072955094,
+        "timestamp": 1764073673053,
         "sortOrder": 0,
         "lane": 0,
         "branchColor": "#4f85e8",
         "index": 1
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み (1)",
+        "files": [
+          "kamui/model-versions-cache.json"
+        ],
+        "branch": "main",
+        "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech",
+        "timestamp": 1764073673053,
+        "sortOrder": 1,
+        "lane": 0,
+        "branchColor": "#4f85e8",
+        "index": 2
+      },
+      {
+        "type": "unstaged",
+        "label": "未ステージ [task/task-1764073316320-2dd9fa] (16)",
+        "files": [
+          ".gitignore",
+          "eslint.config.mjs",
+          "next.config.ts",
+          "package-lock.json",
+          "package.json",
+          "postcss.config.mjs",
+          "public/file.svg",
+          "public/globe.svg",
+          "public/next.svg",
+          "public/vercel.svg",
+          "public/window.svg",
+          "src/app/favicon.ico",
+          "src/app/globals.css",
+          "src/app/layout.tsx",
+          "src/app/page.tsx",
+          "tsconfig.json"
+        ],
+        "branch": "task/task-1764073316320-2dd9fa",
+        "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+        "timestamp": 1764073664945,
+        "sortOrder": 0,
+        "lane": 1,
+        "branchColor": "#e8e84f",
+        "index": 3
+      },
+      {
+        "type": "staged",
+        "label": "ステージ済み [task/task-1764073316320-2dd9fa] (1)",
+        "files": [
+          "EADME.md"
+        ],
+        "branch": "task/task-1764073316320-2dd9fa",
+        "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+        "timestamp": 1764073664945,
+        "sortOrder": 1,
+        "lane": 1,
+        "branchColor": "#e8e84f",
+        "index": 4
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] CodexCLI1: https://shoukyakuro.s…",
+        "branch": "task/task-1764073316320-2dd9fa",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+        "parentCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "lane": 1,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [
+          {
+            "type": "unstaged",
+            "label": "未ステージ [task/task-1764073316320-2dd9fa] (16)",
+            "files": [
+              ".gitignore",
+              "eslint.config.mjs",
+              "next.config.ts",
+              "package-lock.json",
+              "package.json",
+              "postcss.config.mjs",
+              "public/file.svg",
+              "public/globe.svg",
+              "public/next.svg",
+              "public/vercel.svg",
+              "public/window.svg",
+              "src/app/favicon.ico",
+              "src/app/globals.css",
+              "src/app/layout.tsx",
+              "src/app/page.tsx",
+              "tsconfig.json"
+            ],
+            "branch": "task/task-1764073316320-2dd9fa",
+            "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+            "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+            "timestamp": 1764073664945,
+            "sortOrder": 0,
+            "lane": 1,
+            "branchColor": "#e8e84f",
+            "index": 3
+          },
+          {
+            "type": "staged",
+            "label": "ステージ済み [task/task-1764073316320-2dd9fa] (1)",
+            "files": [
+              "EADME.md"
+            ],
+            "branch": "task/task-1764073316320-2dd9fa",
+            "targetCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+            "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+            "timestamp": 1764073664945,
+            "sortOrder": 1,
+            "lane": 1,
+            "branchColor": "#e8e84f",
+            "index": 4
+          }
+        ],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764073316320-2dd9fa",
+        "taskId": "task-1764073316320-2dd9fa",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "CodexCLI1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。",
+        "tooltip": "タスク: CodexCLI1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。\nステータス: 作業中\nID: task-1764073316320-2dd9fa\nBranch: task/task-1764073316320-2dd9fa\nWorktree: Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+        "branchColor": "#e8e84f",
+        "index": 5
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] ClaudeCode1: https://shoukyakuro…",
+        "branch": "task/task-1764073318822-76fafd",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073318822-76fafd",
+        "parentCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "lane": 2,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764073318822-76fafd",
+        "taskId": "task-1764073318822-76fafd",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "ClaudeCode1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。",
+        "tooltip": "タスク: ClaudeCode1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。\nステータス: 作業中\nID: task-1764073318822-76fafd\nBranch: task/task-1764073318822-76fafd\nWorktree: Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073318822-76fafd",
+        "branchColor": "#4fe84f",
+        "index": 6
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] GeminiCLI1: https://shoukyakuro.…",
+        "branch": "task/task-1764073321359-34c131",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073321359-34c131",
+        "parentCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "lane": 3,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764073321359-34c131",
+        "taskId": "task-1764073321359-34c131",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "GeminiCLI1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。",
+        "tooltip": "タスク: GeminiCLI1: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。\nステータス: 作業中\nID: task-1764073321359-34c131\nBranch: task/task-1764073321359-34c131\nWorktree: Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073321359-34c131",
+        "branchColor": "#e84f4f",
+        "index": 7
+      },
+      {
+        "type": "anchor",
+        "label": "[作業中] 🔍Monitor: https://shoukyakuro.s…",
+        "branch": "task/task-1764073323944-1aa208",
+        "worktreePath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073323944-1aa208",
+        "parentCommitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "lane": 4,
+        "isMerged": false,
+        "mergeCommitHash": null,
+        "statusChildren": [],
+        "isDefaultWorktree": false,
+        "renderMode": "node",
+        "shouldHide": false,
+        "tagLabel": "task/task-1764073323944-1aa208",
+        "taskId": "task-1764073323944-1aa208",
+        "taskStatus": "working",
+        "taskStatusLabel": "作業中",
+        "taskName": "🔍Monitor: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。",
+        "tooltip": "タスク: 🔍Monitor: https://shoukyakuro.sakagawa-co.jp/ このサイトをnext.jsを使ったモダンで新しいものにしたい。内容はそのままでデザインを大幅に変更したものを新しく作成してほしい。\nステータス: 作業中\nID: task-1764073323944-1aa208\nBranch: task/task-1764073323944-1aa208\nWorktree: Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073323944-1aa208",
+        "branchColor": "#4f85e8",
+        "index": 8
+      },
+      {
+        "type": "commit",
+        "label": "add",
+        "commit": {
+          "hash": "841dc7546d77858a15a7753936935933374a45a1",
+          "subject": "add",
+          "author": "rnrnstar2",
+          "timestamp": 1764073028,
+          "parents": [
+            "ae73a880793423f565dc90c60555af23c6fa3bf0"
+          ],
+          "parent": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+          "refs": "HEAD -> main, origin/main, origin/HEAD, task/task-1764073323944-1aa208, task/task-1764073321359-34c131, task/task-1764073318822-76fafd, task/task-1764073316320-2dd9fa, task/task-1764073171538-4bf143, task/task-1764073168994-eff9a7, task/task-1764073166474-1e93ba, task/task-1764073163851-5aa65d",
+          "branches": [
+            "HEAD -> main",
+            "origin/main",
+            "origin/HEAD",
+            "task/task-1764073323944-1aa208",
+            "task/task-1764073321359-34c131",
+            "task/task-1764073318822-76fafd",
+            "task/task-1764073316320-2dd9fa",
+            "task/task-1764073171538-4bf143",
+            "task/task-1764073168994-eff9a7",
+            "task/task-1764073166474-1e93ba",
+            "task/task-1764073163851-5aa65d",
+            "main"
+          ]
+        },
+        "commitHash": "841dc7546d77858a15a7753936935933374a45a1",
+        "lane": 0,
+        "parentLinks": [
+          {
+            "hash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
+            "lane": 0
+          }
+        ],
+        "primaryBranchName": "main",
+        "branchColor": "#4f85e8",
+        "branchTags": [
+          "main",
+          "task/task-1764073163851-5aa65d",
+          "task/task-1764073166474-1e93ba",
+          "task/task-1764073168994-eff9a7",
+          "task/task-1764073171538-4bf143"
+        ],
+        "worktrees": [
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech",
+            "head": "841dc7546d77858a15a7753936935933374a45a1",
+            "branch": "main",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "kamui/model-versions-cache.json",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "kamui/model-versions-cache.json",
+                  "timestamp": 1764073664946
+                }
+              ],
+              "unstaged": [
+                {
+                  "path": ".kamui/system-graph-state.json",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": ".kamui/system-graph-state.json",
+                  "timestamp": 1764073664946
+                }
+              ],
+              "untracked": [
+                {
+                  "path": "-.WordPress.2025-11-25.xml",
+                  "status": "untracked",
+                  "rawPath": "-.WordPress.2025-11-25.xml",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".kamui/manager/202511252124_monitor_tasks.html",
+                  "status": "untracked",
+                  "rawPath": ".kamui/manager/202511252124_monitor_tasks.html",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".kamui/prompt/launch-prompt.txt",
+                  "status": "untracked",
+                  "rawPath": ".kamui/prompt/launch-prompt.txt",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".kamui/tasks-state.json",
+                  "status": "untracked",
+                  "rawPath": ".kamui/tasks-state.json",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".worktrees/task-1764073316320-2dd9fa/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1764073316320-2dd9fa/",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".worktrees/task-1764073318822-76fafd/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1764073318822-76fafd/",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".worktrees/task-1764073321359-34c131/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1764073321359-34c131/",
+                  "timestamp": 1764073664946
+                },
+                {
+                  "path": ".worktrees/task-1764073323944-1aa208/",
+                  "status": "untracked",
+                  "rawPath": ".worktrees/task-1764073323944-1aa208/",
+                  "timestamp": 1764073664946
+                }
+              ],
+              "capturedAt": 1764073664946
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech",
+            "lane": 0
+          },
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+            "head": "841dc7546d77858a15a7753936935933374a45a1",
+            "branch": "task/task-1764073316320-2dd9fa",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [
+                {
+                  "path": "EADME.md",
+                  "originalPath": null,
+                  "status": "modified",
+                  "rawPath": "EADME.md",
+                  "timestamp": 1764073664945
+                }
+              ],
+              "unstaged": [],
+              "untracked": [
+                {
+                  "path": ".gitignore",
+                  "status": "untracked",
+                  "rawPath": ".gitignore",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "eslint.config.mjs",
+                  "status": "untracked",
+                  "rawPath": "eslint.config.mjs",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "next.config.ts",
+                  "status": "untracked",
+                  "rawPath": "next.config.ts",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "package-lock.json",
+                  "status": "untracked",
+                  "rawPath": "package-lock.json",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "package.json",
+                  "status": "untracked",
+                  "rawPath": "package.json",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "postcss.config.mjs",
+                  "status": "untracked",
+                  "rawPath": "postcss.config.mjs",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "public/file.svg",
+                  "status": "untracked",
+                  "rawPath": "public/file.svg",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "public/globe.svg",
+                  "status": "untracked",
+                  "rawPath": "public/globe.svg",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "public/next.svg",
+                  "status": "untracked",
+                  "rawPath": "public/next.svg",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "public/vercel.svg",
+                  "status": "untracked",
+                  "rawPath": "public/vercel.svg",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "public/window.svg",
+                  "status": "untracked",
+                  "rawPath": "public/window.svg",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "src/app/favicon.ico",
+                  "status": "untracked",
+                  "rawPath": "src/app/favicon.ico",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "src/app/globals.css",
+                  "status": "untracked",
+                  "rawPath": "src/app/globals.css",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "src/app/layout.tsx",
+                  "status": "untracked",
+                  "rawPath": "src/app/layout.tsx",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "src/app/page.tsx",
+                  "status": "untracked",
+                  "rawPath": "src/app/page.tsx",
+                  "timestamp": 1764073664945
+                },
+                {
+                  "path": "tsconfig.json",
+                  "status": "untracked",
+                  "rawPath": "tsconfig.json",
+                  "timestamp": 1764073664945
+                }
+              ],
+              "capturedAt": 1764073664945
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073316320-2dd9fa",
+            "lane": 1
+          },
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073318822-76fafd",
+            "head": "841dc7546d77858a15a7753936935933374a45a1",
+            "branch": "task/task-1764073318822-76fafd",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [],
+              "capturedAt": 1764073664963
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073318822-76fafd",
+            "lane": 2
+          },
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073321359-34c131",
+            "head": "841dc7546d77858a15a7753936935933374a45a1",
+            "branch": "task/task-1764073321359-34c131",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [],
+              "capturedAt": 1764073664963
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073321359-34c131",
+            "lane": 3
+          },
+          {
+            "path": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073323944-1aa208",
+            "head": "841dc7546d77858a15a7753936935933374a45a1",
+            "branch": "task/task-1764073323944-1aa208",
+            "isMerged": false,
+            "mergeCommitHash": null,
+            "status": {
+              "staged": [],
+              "unstaged": [],
+              "untracked": [],
+              "capturedAt": 1764073664984
+            },
+            "normalizedPath": "/Users/rnrnstar/github/ProOneTech/.worktrees/task-1764073323944-1aa208",
+            "lane": 4
+          }
+        ],
+        "index": 9
       },
       {
         "type": "commit",
@@ -225,12 +870,13 @@
           "timestamp": 1764072914,
           "parents": [],
           "parent": null,
-          "refs": "HEAD -> main, origin/main, origin/HEAD",
+          "refs": "",
           "branches": [
-            "HEAD -> main",
-            "origin/main",
-            "origin/HEAD",
-            "main"
+            "main",
+            "task/task-1764073316320-2dd9fa",
+            "task/task-1764073318822-76fafd",
+            "task/task-1764073321359-34c131",
+            "task/task-1764073323944-1aa208"
           ]
         },
         "commitHash": "ae73a880793423f565dc90c60555af23c6fa3bf0",
@@ -238,68 +884,18 @@
         "parentLinks": [],
         "primaryBranchName": "main",
         "branchColor": "#4f85e8",
-        "branchTags": [
-          "main"
-        ],
-        "worktrees": [
-          {
-            "path": "/Users/rnrnstar/github/ProOneTech",
-            "head": "ae73a880793423f565dc90c60555af23c6fa3bf0",
-            "branch": "main",
-            "isMerged": false,
-            "mergeCommitHash": null,
-            "status": {
-              "staged": [],
-              "unstaged": [],
-              "untracked": [
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.css",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.css",
-                  "timestamp": 1764072954955
-                },
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.html",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.html",
-                  "timestamp": 1764072954955
-                },
-                {
-                  "path": ".kamui/apps/kamui-os-intro-1732171200.js",
-                  "status": "untracked",
-                  "rawPath": ".kamui/apps/kamui-os-intro-1732171200.js",
-                  "timestamp": 1764072954955
-                },
-                {
-                  "path": ".kamui/gantte/test.yaml",
-                  "status": "untracked",
-                  "rawPath": ".kamui/gantte/test.yaml",
-                  "timestamp": 1764072954955
-                },
-                {
-                  "path": ".kamui/prompt/merge-prompt.txt",
-                  "status": "untracked",
-                  "rawPath": ".kamui/prompt/merge-prompt.txt",
-                  "timestamp": 1764072954955
-                }
-              ],
-              "capturedAt": 1764072954955
-            },
-            "normalizedPath": "/Users/rnrnstar/github/ProOneTech",
-            "lane": 0
-          }
-        ],
-        "index": 2
+        "branchTags": [],
+        "index": 10
       },
       {
         "type": "empty",
         "label": "初期状態 (初回コミット以前)",
         "files": [],
         "marker": "pre-history",
-        "index": 3
+        "index": 11
       }
     ]
   },
   "projectRoot": "/Users/rnrnstar/github/ProOneTech",
-  "savedAt": 1764072957624
+  "savedAt": 1764073675971
 }

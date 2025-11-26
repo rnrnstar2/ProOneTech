@@ -147,13 +147,12 @@ export default function Home() {
       {/* ビジュアルセクション */}
       <section className="section-py bg-gradient-to-br from-blue-50 via-white to-white">
         <div className="container">
-          <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-white flex items-center justify-center border border-slate-200">
+          <div className="relative w-full overflow-hidden rounded-3xl bg-white flex items-center justify-center">
             <img
               src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
               alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-              className="max-h-full max-w-full object-contain"
+              className="w-full h-auto max-h-[500px] object-contain"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent pointer-events-none"></div>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import { siteInfo } from "@/lib/site-info"
@@ -12,7 +13,17 @@ export function SiteFooter() {
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                     {/* 会社情報 */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-slate-900">{siteInfo.company}（{siteInfo.brand}）</h3>
+                        <div className="flex items-center gap-3">
+                            <Image
+                                src="/images/pot.png"
+                                alt={`${siteInfo.brand} ロゴ`}
+                                width={120}
+                                height={32}
+                                className="h-8 w-auto object-contain"
+                                priority
+                            />
+                        </div>
+                        <h3 className="text-lg font-bold text-slate-900">{siteInfo.company}</h3>
                         <p className="text-sm leading-relaxed text-slate-600">
                             無煙焼却炉「ベストファイヤー」を製造するプロワンテック事業部。環境に優しく効率的な廃棄物管理ソリューションを提供します。
                         </p>

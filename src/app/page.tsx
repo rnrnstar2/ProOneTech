@@ -49,6 +49,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 事業再構築セクション（WP「TOP」より） */}
+      <section className="section-py bg-slate-900 text-white">
+        <div className="container">
+          <div className="grid gap-8 lg:grid-cols-2 items-center">
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm border border-white/10">
+                R2 事業再構築
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
+                煙の出ない高性能 消炎焼却炉
+              </h2>
+              <p className="text-slate-200 leading-relaxed">
+                ベストファイヤー HBF601-BL-Ⅱ型。届出不要・高い燃焼効率・国内製造・構造基準適合補償・廃プラ対応。
+                既存サイトのビジュアル（WPエクスポート）を反映しました。
+              </p>
+              <div className="flex flex-wrap gap-3">
+                <Button asChild className="rounded-full bg-white text-slate-900 hover:bg-slate-100">
+                  <Link href="/summary">概要を見る</Link>
+                </Button>
+                <Button asChild variant="outline" className="rounded-full border-white/40 text-white hover:bg-white/10">
+                  <Link href="/instruction">取扱説明</Link>
+                </Button>
+                <Button asChild variant="outline" className="rounded-full border-white/40 text-white hover:bg-white/10">
+                  <Link href="/drawing">図面</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative rounded-3xl overflow-hidden bg-slate-800 shadow-2xl">
+              <img
+                src="/images/焼却炉-プレゼンテーション（169）.gif"
+                alt="焼却炉プレゼンテーション"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 特長セクション */}
       <section className="section-py bg-white">
         <div className="container">

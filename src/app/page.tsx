@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* ヒーローセクション */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16 sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-white py-16 sm:py-24 lg:py-32">
         <div className="absolute inset-0">
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
@@ -53,17 +53,17 @@ export default function Home() {
             className="h-full w-full object-cover opacity-40 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white"></div>
         <div className="container relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-600/20 px-4 py-2 backdrop-blur-sm mb-4 sm:mb-6 border border-blue-400/30">
             <Flame className="h-4 w-4 text-blue-400" />
             <span className="text-sm font-medium text-blue-400">最新の無煙焼却技術</span>
           </div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-4xl px-4">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-4xl px-4">
             {siteInfo.brand} <br />
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">無煙焼却炉</span>
           </h1>
-          <p className="mt-6 sm:mt-8 max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-300 leading-relaxed px-4">
+          <p className="mt-6 sm:mt-8 max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-600 leading-relaxed px-4">
             高性能で環境に優しい焼却炉ソリューション。<br />
             効率的な廃棄物管理を実現します。
           </p>
@@ -73,7 +73,7 @@ export default function Home() {
                 製品を見る <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="bg-transparent text-white border-white/30 hover:bg-white/10 text-lg px-8 h-14 rounded-full backdrop-blur-sm" asChild>
+            <Button variant="outline" size="lg" className="bg-white text-blue-700 border-blue-200 hover:bg-blue-50 text-lg px-8 h-14 rounded-full shadow-sm" asChild>
               <Link href="/#contact">お問い合わせ</Link>
             </Button>
           </div>
@@ -81,34 +81,34 @@ export default function Home() {
       </section>
 
       {/* 事業再構築セクション（WP「TOP」より） */}
-      <section className="section-py bg-slate-900 text-white">
+      <section className="section-py bg-white text-slate-900">
         <div className="container">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm border border-white/10">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-sm border border-blue-200 text-blue-700">
                 R2 事業再構築
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
                 煙の出ない高性能 消炎焼却炉
               </h2>
-              <p className="text-slate-200 leading-relaxed">
+              <p className="text-slate-600 leading-relaxed">
                 ベストファイヤー HBF601-BL-Ⅱ型。届出不要・高い燃焼効率・国内製造・構造基準適合補償・廃プラ対応。
                 既存サイトのビジュアル（WPエクスポート）を反映しました。
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button asChild className="rounded-full bg-white text-slate-900 hover:bg-slate-100">
+                <Button asChild className="rounded-full bg-blue-600 text-white hover:bg-blue-700">
                   <Link href="/summary">概要を見る</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-white/40 text-white hover:bg-white/10">
+                <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
                   <Link href="/instruction">取扱説明</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-white/40 text-white hover:bg-white/10">
+                <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
                   <Link href="/drawing">図面</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-3xl bg-slate-800/80 border border-slate-700 shadow-2xl p-6 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-200 border border-blue-400/30">
+            <div className="rounded-3xl bg-white border border-slate-200 shadow-lg p-6 space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 border border-blue-200">
                 ベストファイヤー HBF601-BL-Ⅱ型
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
@@ -121,8 +121,8 @@ export default function Home() {
                   "温度センサ＋助燃装置で安全運転",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-300 mt-0.5" />
-                    <span className="text-sm text-slate-100 leading-relaxed">{item}</span>
+                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5" />
+                    <span className="text-sm text-slate-700 leading-relaxed">{item}</span>
                   </div>
                 ))}
               </div>
@@ -175,18 +175,18 @@ export default function Home() {
       </section>
 
       {/* 会社概要セクション */}
-      <section id="about" className="section-py bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+      <section id="about" className="section-py bg-gradient-to-br from-blue-50 via-white to-white text-slate-900">
         <div className="container">
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 {siteInfo.brand}について
               </h2>
-              <p className="text-lg text-slate-300 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 {siteInfo.brand}は、最新の廃棄物管理ニーズに対応する高効率焼却炉の専門メーカーです。
                 環境に配慮した持続可能で無煙、かつ耐久性に優れたソリューションを提供することが私たちの使命です。
               </p>
-              <p className="text-lg text-slate-300 leading-relaxed">
+              <p className="text-lg text-slate-600 leading-relaxed">
                 20年以上にわたる熱工学の経験を活かし、環境への影響を最小限に抑えながら効率を最大化する燃焼技術を完成させました。
               </p>
               <div className="grid grid-cols-3 gap-6 pt-6">
@@ -203,11 +203,11 @@ export default function Home() {
                   <div className="text-sm text-slate-400">顧客満足度</div>
                 </div>
               </div>
-              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full" asChild>
+              <Button size="lg" className="bg-white text-slate-900 hover:bg-gray-100 rounded-full" asChild>
                 <Link href="/summary">詳しく見る</Link>
               </Button>
             </div>
-            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 flex items-center justify-center border border-slate-700/60">
+            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-white flex items-center justify-center border border-slate-700/60">
               <img
                 src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
                 alt={`${siteInfo.brand} 焼却炉ビジュアル`}
@@ -220,7 +220,7 @@ export default function Home() {
       </section>
 
       {/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
-      <section className="section-py bg-slate-50">
+      <section className="section-py bg-gray-50">
         <div className="container space-y-12">
           <div className="space-y-3 text-center">
             <h2 className="text-3xl sm:text-4xl font-bold">小型焼却炉の法律について</h2>
@@ -307,7 +307,7 @@ export default function Home() {
                   <li>焼却灰・未燃物を飛散させない。</li>
                 </ul>
                 <p className="text-amber-700 font-semibold">違反は懲役・罰金の対象。適正運用が必須です。</p>
-                <details className="mt-2 rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-slate-700">
+                <details className="mt-2 rounded-lg border border-slate-200 bg-gray-100 px-3 py-2 text-slate-700">
                   <summary className="cursor-pointer font-semibold text-slate-800">詳細を見る</summary>
                   <p className="text-xs leading-relaxed mt-2">
                     違反者には「3年以下の懲役、300万円以下の罰金またはその両方」。法人には加重罰が適用される場合があります。
@@ -323,7 +323,7 @@ export default function Home() {
               <CardContent className="text-sm text-muted-foreground space-y-2">
                 <p>野焼きは違法です。罰則：5年以下の懲役または1,000万円以下の罰金（法人は最大1億円）。</p>
                 <p>適法な焼却炉で、基準に沿った運用を行ってください。</p>
-                <details className="mt-2 rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-slate-700">
+                <details className="mt-2 rounded-lg border border-slate-200 bg-gray-100 px-3 py-2 text-slate-700">
                   <summary className="cursor-pointer font-semibold text-slate-800">詳細を見る</summary>
                   <p className="text-xs leading-relaxed mt-2">
                     焼却灰・未燃物の飛散を防ぎ、煙突からの黒煙を抑えることが求められます。違反時は個人に加え法人にも加重罰が科されます。
@@ -347,14 +347,14 @@ export default function Home() {
 
           <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr] items-start">
             <div className="grid gap-4">
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-50 flex items-center justify-center">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
                 <img
                   src="/images/スクリーンショット-2023-01-10-14.46.12.png"
                   alt="部品一覧イメージ（価格表）"
                   className="h-full w-full object-contain"
                 />
               </div>
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-50 flex items-center justify-center">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
                 <img
                   src="/images/スクリーンショット-2022-12-13-15.03.00.png"
                   alt="部品一覧イメージ（一覧表）"
@@ -389,11 +389,11 @@ export default function Home() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.slice(0, 3).map((product) => (
               <Card key={product.id} className="flex flex-col overflow-hidden border-slate-200">
-                <div className="relative aspect-square w-full bg-slate-100">
+                <div className="relative aspect-square w-full bg-gray-100">
                   {product.image ? (
                     <img src={product.image} alt={product.title} className="h-full w-full object-cover" />
                   ) : (
-                    <div className="flex h-full items-center justify-center text-slate-300 text-5xl">📦</div>
+                    <div className="flex h-full items-center justify-center text-slate-600 text-5xl">📦</div>
                   )}
                 </div>
                 <CardHeader>
@@ -418,7 +418,7 @@ export default function Home() {
       </section>
 
       {/* 最新ニュース */}
-      <section id="blog" className="section-py bg-slate-50">
+      <section id="blog" className="section-py bg-gray-50">
         <div className="container">
           <div className="flex items-center justify-between mb-12">
             <div>
@@ -474,23 +474,23 @@ export default function Home() {
       </section>
 
       {/* お問い合わせセクション */}
-      <section id="contact" className="section-py bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section id="contact" className="section-py bg-gradient-to-br from-blue-50 via-white to-white text-slate-900">
         <div className="container max-w-4xl text-center">
-          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6">
+          <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-6 text-slate-900">
             廃棄物管理をアップグレードしませんか?
           </h2>
-          <p className="text-xl text-blue-100 mb-12 leading-relaxed">
+          <p className="text-xl text-slate-600 mb-12 leading-relaxed">
             今すぐお問い合わせいただき、無料相談またはお見積りをご依頼ください。<br />
             専門チームが迅速に対応いたします。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 px-10 h-16 text-lg rounded-full shadow-xl">
+            <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 px-10 h-16 text-lg rounded-full shadow-xl">
               お見積り依頼
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-blue-50 hover:bg-white/10 px-10 h-16 text-lg rounded-full bg-white/5 backdrop-blur"
+              className="border-blue-200 text-blue-700 hover:bg-blue-50 px-10 h-16 text-lg rounded-full bg-white"
             >
               サポートに連絡
             </Button>

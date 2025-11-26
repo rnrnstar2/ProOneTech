@@ -20,14 +20,14 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-6 max-w-5xl">
         <div className="space-y-3">
-          <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-sm border border-white/20">
+          <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm border border-blue-200 text-blue-700">
             お問い合わせ
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">ご相談・お見積りの依頼</h1>
-              <p className="text-slate-200 text-lg leading-relaxed">
+              <p className="text-slate-600 text-lg leading-relaxed">
             デモ・図面確認・仕様相談・価格のお問い合わせをお受けしています。フォームまたはお電話（{siteInfo.factory.tel}）でお気軽にご連絡ください。
           </p>
           <div className="flex gap-3 flex-wrap">
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <Button
               asChild
               variant="outline"
-              className="rounded-full border-white bg-white text-blue-700 hover:bg-blue-50"
+              className="rounded-full border-blue-200 bg-white text-blue-700 hover:bg-blue-50"
             >
               <Link href="/drawing">図面を見る</Link>
             </Button>
@@ -47,31 +47,31 @@ export default function ContactPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-2xl text-white">フォームで問い合わせる</CardTitle>
-              <p className="text-sm text-slate-200">
+              <CardTitle className="text-2xl text-slate-900">フォームで問い合わせる</CardTitle>
+              <p className="text-sm text-slate-600">
                 内容を確認後、担当からご連絡いたします。
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid gap-3">
-                <Label htmlFor="name" className="text-white">お名前</Label>
-                <Input id="name" placeholder="例）山田 太郎" className="bg-white/10 border-white/20 text-white placeholder:text-slate-300" />
+                <Label htmlFor="name" className="text-slate-900">お名前</Label>
+                <Input id="name" placeholder="例）山田 太郎" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
               </div>
               <div className="grid gap-3">
-                <Label htmlFor="email" className="text-white">メールアドレス</Label>
-                <Input id="email" type="email" placeholder="you@example.com" className="bg-white/10 border-white/20 text-white placeholder:text-slate-300" />
+                <Label htmlFor="email" className="text-slate-900">メールアドレス</Label>
+                <Input id="email" type="email" placeholder="you@example.com" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
               </div>
               <div className="grid gap-3">
-                <Label htmlFor="tel" className="text-white">電話番号</Label>
-                <Input id="tel" type="tel" placeholder="080-xxxx-xxxx" className="bg-white/10 border-white/20 text-white placeholder:text-slate-300" />
+                <Label htmlFor="tel" className="text-slate-900">電話番号</Label>
+                <Input id="tel" type="tel" placeholder="080-xxxx-xxxx" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
               </div>
               <div className="grid gap-3">
-                <Label htmlFor="message" className="text-white">お問い合わせ内容</Label>
+                <Label htmlFor="message" className="text-slate-900">お問い合わせ内容</Label>
                 <textarea
                   id="message"
                   rows={5}
                   placeholder="導入時期や用途などをご記入ください。"
-                  className="rounded-md border border-white/20 bg-white/10 p-3 text-sm text-white placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="rounded-md border border-white/20 bg-white/10 p-3 text-sm text-slate-900 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <Button className="w-full rounded-full">送信する</Button>
@@ -81,18 +81,18 @@ export default function ContactPage() {
           <div className="space-y-4">
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-2xl text-white">連絡先・所在地</CardTitle>
+                <CardTitle className="text-2xl text-slate-900">連絡先・所在地</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3 text-slate-100">
+              <CardContent className="space-y-3 text-slate-700">
                 {contacts.map((item) => (
                   <div key={item.label} className="border-b border-white/10 pb-3 last:border-b-0 last:pb-0">
-                    <p className="text-sm text-slate-300">{item.label}</p>
+                    <p className="text-sm text-slate-600">{item.label}</p>
                     {item.href ? (
-                      <a href={item.href} className="text-lg font-semibold text-white hover:underline">
+                      <a href={item.href} className="text-lg font-semibold text-slate-900 hover:underline">
                         {item.value}
                       </a>
                     ) : (
-                      <p className="text-lg font-semibold text-white">{item.value}</p>
+                      <p className="text-lg font-semibold text-slate-900">{item.value}</p>
                     )}
                   </div>
                 ))}
@@ -101,10 +101,10 @@ export default function ContactPage() {
 
             <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
               <CardHeader>
-                <CardTitle className="text-xl text-white">工場アクセス</CardTitle>
+                <CardTitle className="text-xl text-slate-900">工場アクセス</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-3 text-slate-100">
-                <p className="text-sm text-slate-300">Googleマップでルートを確認</p>
+              <CardContent className="space-y-3 text-slate-700">
+                <p className="text-sm text-slate-600">Googleマップでルートを確認</p>
                 <Button
                   asChild
                   variant="outline"

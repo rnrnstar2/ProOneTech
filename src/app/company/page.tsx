@@ -54,7 +54,7 @@ export const metadata = {
 
 export default function CompanyPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -63,13 +63,15 @@ export default function CompanyPage() {
             className="h-full w-full object-cover opacity-25 scale-105 blur-[2px]"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/80 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 space-y-6 max-w-5xl">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             企業情報
           </Badge>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">坂川建設鉱業株式会社（プロワンテック）</h1>
-          <p className="text-lg sm:text-xl text-slate-200 leading-relaxed">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
+            {siteInfo.company}（{siteInfo.brand}）
+          </h1>
+          <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
             無煙焼却炉「ベストファイヤー」を製造するプロワンテックは、坂川建設鉱業株式会社の焼却炉事業部です。
             土木・解体から産業廃棄物処理まで幅広い事業で培った技術をもとに、安心・安全な焼却ソリューションを提供しています。
           </p>
@@ -77,7 +79,7 @@ export default function CompanyPage() {
             <Button asChild className="rounded-full">
               <Link href="/contact">お問い合わせ</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full border-white/30 text-white hover:bg-white/10">
+            <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
               <Link href="/drawing">図面を見る</Link>
             </Button>
           </div>
@@ -109,7 +111,7 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50">
+      <section className="bg-gray-50">
         <div className="container py-12 sm:py-16 space-y-8 max-w-6xl">
           <div className="space-y-2">
             <h3 className="text-3xl font-bold text-slate-900">拠点・アクセス</h3>

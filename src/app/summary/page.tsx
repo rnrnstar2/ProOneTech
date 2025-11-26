@@ -45,7 +45,7 @@ export const metadata = {
 
 export default function SummaryPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
@@ -55,19 +55,19 @@ export default function SummaryPage() {
             className="h-full w-full object-cover opacity-30 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/70 to-slate-900" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 flex flex-col gap-8">
-          <div className="inline-flex items-center gap-2 self-start rounded-full bg-blue-500/15 px-4 py-2 text-blue-200 border border-blue-400/30 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 self-start rounded-full bg-blue-50 px-4 py-2 text-blue-700 border border-blue-200 backdrop-blur-sm">
             <span className="text-sm font-semibold">煙を抑える多段燃焼設計</span>
           </div>
           <div className="max-w-3xl space-y-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
               焼却炉概要
-              <span className="block text-blue-200 text-2xl sm:text-3xl font-semibold mt-3">
+              <span className="block text-blue-600 text-2xl sm:text-3xl font-semibold mt-3">
                 ベストファイヤー HBF601-BL-Ⅱ 型
               </span>
             </h1>
-            <p className="text-lg sm:text-xl text-slate-200 leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
               燃焼効率と安全性を両立した無煙焼却炉。高温燃焼と強制送風で黒煙を抑え、環境配慮と扱いやすさを兼ね備えています。
               主要情報へのショートカットをまとめました。
             </p>
@@ -75,7 +75,7 @@ export default function SummaryPage() {
               <Button asChild size="lg" className="rounded-full px-8">
                 <Link href="/products">製品を見る</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full border-white/30 text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
                 <Link href="/contact">お問い合わせ</Link>
               </Button>
             </div>
@@ -88,7 +88,7 @@ export default function SummaryPage() {
                   <CardTitle className="text-sm text-blue-100 font-semibold">{item.label}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-xl font-bold text-white">{item.value}</p>
+                  <p className="text-xl font-bold text-slate-900">{item.value}</p>
                 </CardContent>
               </Card>
             ))}
@@ -128,16 +128,16 @@ export default function SummaryPage() {
       </section>
 
       {/* Feature bullets */}
-      <section className="bg-slate-900">
+      <section className="bg-white">
         <div className="container py-14 sm:py-16 space-y-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold">ベストファイヤーの特徴</h3>
-              <p className="text-slate-300 mt-2">
+              <p className="text-slate-600 mt-2">
                 現場で求められる安全性・耐久性・操作性を高い次元で統合しました。
               </p>
             </div>
-            <Button asChild className="rounded-full bg-white text-slate-900 hover:bg-slate-100">
+            <Button asChild className="rounded-full bg-white text-slate-900 hover:bg-gray-100">
               <Link href="/specification">仕様を詳しく見る</Link>
             </Button>
           </div>
@@ -169,12 +169,12 @@ export default function SummaryPage() {
                 desc: "木材・紙・繊維から廃プラまで、発熱量を考慮した焼却が可能。",
               },
             ].map((item) => (
-              <Card key={item.title} className="h-full border-slate-800 bg-slate-800/40">
+              <Card key={item.title} className="h-full border-slate-800 bg-white/40">
                 <CardHeader>
-                  <CardTitle className="text-white">{item.title}</CardTitle>
+                  <CardTitle className="text-slate-900">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-300 leading-relaxed">{item.desc}</p>
+                  <p className="text-slate-600 leading-relaxed">{item.desc}</p>
                 </CardContent>
               </Card>
             ))}

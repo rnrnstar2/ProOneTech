@@ -72,7 +72,7 @@ export const metadata = {
 
 export default function InstructionPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
@@ -81,20 +81,20 @@ export default function InstructionPage() {
             className="h-full w-full object-cover opacity-20 blur-[1px] scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/85 to-slate-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
         <div className="container relative z-10 py-14 sm:py-16 space-y-4 max-w-4xl">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             取扱説明
           </Badge>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">安全にお使いいただくために</h1>
-          <p className="text-slate-200 text-lg leading-relaxed">
+          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">安全にお使いいただくために</h1>
+          <p className="text-slate-600 text-lg leading-relaxed">
             ベストファイヤー焼却炉の取扱いで重要な注意事項・操作手順・メンテナンス方法を抜粋してまとめました。
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild className="rounded-full">
               <Link href="/specification">仕様を確認</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full border-white/30 text-white hover:bg-white/10">
+            <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
               <Link href="/drawing">図面を見る</Link>
             </Button>
           </div>
@@ -157,7 +157,7 @@ export default function InstructionPage() {
               <CardContent className="space-y-3">
                 {operationSteps.map((step, idx) => (
                   <div key={step} className="flex gap-3">
-                    <div className="h-8 w-8 rounded-full bg-slate-900 text-white flex items-center justify-center font-semibold">
+                    <div className="h-8 w-8 rounded-full bg-white text-slate-900 flex items-center justify-center font-semibold">
                       {idx + 1}
                     </div>
                     <p className="text-sm leading-relaxed text-slate-800">{step}</p>

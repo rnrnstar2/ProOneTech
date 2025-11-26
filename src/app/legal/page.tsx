@@ -44,21 +44,21 @@ export const metadata = {
 
 export default function LegalPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-8 max-w-5xl">
         <div className="space-y-3">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             法定表示
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">特定商取引法に基づく表記</h1>
-          <p className="text-slate-200 text-lg leading-relaxed">
+          <p className="text-slate-600 text-lg leading-relaxed">
             プロワンテック（坂川建設鉱業株式会社）の販売事業に関する情報を掲載しています。
           </p>
         </div>
 
         <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-2xl text-white">事業者情報と取引条件</CardTitle>
+            <CardTitle className="text-2xl text-slate-900">事業者情報と取引条件</CardTitle>
           </CardHeader>
           <CardContent className="grid gap-4">
             {rows.map((row) => (
@@ -66,8 +66,8 @@ export default function LegalPage() {
                 key={row.label}
                 className="grid gap-2 rounded-xl border border-white/10 bg-white/5 p-4 sm:grid-cols-[180px,1fr] sm:items-start"
               >
-                <p className="text-sm font-semibold text-slate-200">{row.label}</p>
-                <div className="text-sm text-slate-100 leading-relaxed space-y-1">
+                <p className="text-sm font-semibold text-slate-600">{row.label}</p>
+                <div className="text-sm text-slate-700 leading-relaxed space-y-1">
                   {Array.isArray(row.value) ? (
                     row.value.map((v) => <p key={v}>{v}</p>)
                   ) : (

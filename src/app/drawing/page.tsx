@@ -22,27 +22,27 @@ export const metadata = {
 
 export default function DrawingPage() {
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-6">
         <div className="space-y-3">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20">
+          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
             設計資料
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">焼却炉図面</h1>
-          <p className="text-slate-200 max-w-3xl leading-relaxed">
+          <p className="text-slate-600 max-w-3xl leading-relaxed">
             ベストファイヤーの外形寸法と内部構造を高解像度でご確認いただけます。
           </p>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
           {drawings.map((item) => (
-            <Card key={item.title} className="overflow-hidden border-slate-800 bg-slate-800/50">
+            <Card key={item.title} className="overflow-hidden border-slate-800 bg-white/50">
               <CardHeader>
                 <div className="flex items-center gap-2 mb-2">
                   <Badge variant="outline" className="border-blue-200 text-blue-100">PDF/IMG</Badge>
                 </div>
-                <CardTitle className="text-2xl text-white">{item.title}</CardTitle>
-                <p className="text-slate-300 text-sm leading-relaxed">{item.description}</p>
+                <CardTitle className="text-2xl text-slate-900">{item.title}</CardTitle>
+                <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>
               </CardHeader>
               <CardContent className="p-0">
                 <div className="relative">

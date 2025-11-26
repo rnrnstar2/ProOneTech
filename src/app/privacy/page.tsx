@@ -56,27 +56,27 @@ export const metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-8 max-w-4xl">
         <div className="space-y-3">
-          <Badge variant="secondary" className="bg-white/10 text-white border-white/20 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             プライバシー
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">プライバシーポリシー</h1>
-          <p className="text-slate-200 leading-relaxed">
+          <p className="text-slate-600 leading-relaxed">
             {siteInfo.company}（{siteInfo.brand}）はお客様の個人情報を適切に取り扱い、安全管理に努めます。
           </p>
         </div>
 
         <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
           <CardHeader>
-            <CardTitle className="text-2xl text-white">個人情報の取り扱い</CardTitle>
+            <CardTitle className="text-2xl text-slate-900">個人情報の取り扱い</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             {items.map((item) => (
               <div key={item.title} className="space-y-2 rounded-xl border border-white/10 bg-white/5 p-4">
-                <h2 className="text-lg font-semibold text-white">{item.title}</h2>
-                <div className="text-sm text-slate-100 leading-relaxed space-y-1">
+                <h2 className="text-lg font-semibold text-slate-900">{item.title}</h2>
+                <div className="text-sm text-slate-700 leading-relaxed space-y-1">
                   {Array.isArray(item.body) ? item.body.map((b) => <p key={b}>{b}</p>) : <p>{item.body}</p>}
                 </div>
               </div>

@@ -30,7 +30,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【23】簡易投入扉",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.002.jpeg",
+    "image": "/images/名称未設定4.002.jpeg",
     "price": 75000,
     "categories": [
       "outofstock",
@@ -46,7 +46,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【25】ロストル(一対)",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.007.jpeg",
+    "image": "/images/名称未設定4.007.jpeg",
     "price": 20000,
     "categories": [
       "outofstock",
@@ -62,7 +62,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【21】煙突トップ",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.005.jpeg",
+    "image": "/images/名称未設定4.005.jpeg",
     "price": 35000,
     "categories": [
       "outofstock",
@@ -78,7 +78,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【20】煙突_SUS t3",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.006.jpeg",
+    "image": "/images/名称未設定4.006.jpeg",
     "price": 65000,
     "categories": [
       "outofstock",
@@ -94,7 +94,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【19】煙突台座",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.004.jpeg",
+    "image": "/images/名称未設定4.004.jpeg",
     "price": 35000,
     "categories": [
       "outofstock",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     "excerpt": "",
     "date": "2022-11-04 12:17:05",
     "slug": "【24】灰出し扉",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.003.jpeg",
+    "image": "/images/名称未設定4.003.jpeg",
     "price": 30000,
     "categories": [
       "outofstock",
@@ -129,7 +129,7 @@ export const posts: Post[] = [
     "excerpt": "",
     "date": "2022-11-02 10:50:57",
     "slug": "投稿テスト１",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/images.jpeg",
+    "image": "/images/images.jpeg",
     "categories": [
       "お知らせ"
     ],
@@ -142,7 +142,7 @@ export const posts: Post[] = [
     "excerpt": "",
     "date": "2022-11-04 12:40:35",
     "slug": "投稿テスト2",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/61f508a97dcd3abc674d50d242f6db2b.jpeg",
+    "image": "/images/61f508a97dcd3abc674d50d242f6db2b.jpeg",
     "categories": [
       "特集記事"
     ],
@@ -155,7 +155,7 @@ export const posts: Post[] = [
     "excerpt": "",
     "date": "2022-11-04 12:40:57",
     "slug": "投稿テスト3",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/sansuirou-650n.jpeg",
+    "image": "/images/sansuirou-650n.jpeg",
     "categories": [
       "ピックアップ"
     ],
@@ -168,7 +168,7 @@ export const posts: Post[] = [
     "excerpt": "",
     "date": "2022-11-04 12:41:17",
     "slug": "投稿テスト4",
-    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/MG_3825-1.jpeg",
+    "image": "/images/MG_3825-1.jpeg",
     "categories": [
       "ピックアップ"
     ],

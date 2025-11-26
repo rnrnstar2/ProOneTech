@@ -15,7 +15,13 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       {/* ヒーローセクション */}
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16 sm:py-24 lg:py-32">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center opacity-10"></div>
+        <div className="absolute inset-0">
+          <img
+            src="/images/焼却炉内部構造.jpg"
+            alt="ProOneTechの焼却炉内部構造"
+            className="h-full w-full object-cover opacity-30 scale-105 blur-[1px]"
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900"></div>
         <div className="container relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-600/20 px-4 py-2 backdrop-blur-sm mb-4 sm:mb-6 border border-blue-400/30">
@@ -114,20 +120,20 @@ export default function Home() {
                   <div className="text-4xl font-bold text-blue-400 mb-2">100%</div>
                   <div className="text-sm text-slate-400">顧客満足度</div>
                 </div>
-              </div>
-              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full">
-                詳しく見る
+            </div>
+              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full" asChild>
+                <Link href="/summary">詳しく見る</Link>
               </Button>
             </div>
-            <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-                alt="ProOneTech工場"
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-            </div>
+          <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              src="/images/焼却炉図面-1.jpg"
+              alt="ProOneTech焼却炉図面"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
           </div>
+        </div>
         </div>
       </section>
 

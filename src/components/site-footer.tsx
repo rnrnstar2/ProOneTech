@@ -33,13 +33,13 @@ export function SiteFooter() {
                         <h3 className="text-lg font-bold text-white">クイックリンク</h3>
                         <ul className="space-y-2 text-sm">
                             <li>
-                                <Link href="/" className="transition-colors hover:text-blue-400">
-                                    ホーム
+                                <Link href="/summary" className="transition-colors hover:text-blue-400">
+                                    焼却炉概要
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#about" className="transition-colors hover:text-blue-400">
-                                    会社概要
+                                <Link href="/specification" className="transition-colors hover:text-blue-400">
+                                    本体仕様
                                 </Link>
                             </li>
                             <li>
@@ -53,8 +53,13 @@ export function SiteFooter() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/#contact" className="transition-colors hover:text-blue-400">
+                                <Link href="/contact" className="transition-colors hover:text-blue-400">
                                     お問い合わせ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/drawing" className="transition-colors hover:text-blue-400">
+                                    図面
                                 </Link>
                             </li>
                         </ul>

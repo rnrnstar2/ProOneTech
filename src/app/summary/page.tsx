@@ -83,9 +83,9 @@ export default function SummaryPage() {
 
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {highlights.map((item) => (
-              <Card key={item.label} className="bg-white/5 border-white/10 backdrop-blur-sm">
+              <Card key={item.label} className="bg-white border-slate-200 shadow-sm">
                 <CardHeader>
-                  <CardTitle className="text-sm text-blue-100 font-semibold">{item.label}</CardTitle>
+                  <CardTitle className="text-sm text-blue-700 font-semibold">{item.label}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-xl font-bold text-slate-900">{item.value}</p>

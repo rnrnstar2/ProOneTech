@@ -72,8 +72,7 @@ export default function CompanyPage() {
             {siteInfo.company}（{siteInfo.brand}）
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 leading-relaxed">
-            無煙焼却炉「ベストファイヤー」を製造するプロワンテックは、坂川建設鉱業株式会社の焼却炉事業部です。
-            土木・解体から産業廃棄物処理まで幅広い事業で培った技術をもとに、安心・安全な焼却ソリューションを提供しています。
+            無煙焼却炉「ベストファイヤー」を製造するプロワンテック（坂川建設鉱業株式会社 焼却炉事業部）です。
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild className="rounded-full">

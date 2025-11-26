@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer";
+import { siteInfo } from "@/lib/site-info"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,10 +17,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "ProOneTech | 無煙焼却炉メーカー",
-    template: "%s | ProOneTech"
+    default: `${siteInfo.brand} | 無煙焼却炉メーカー`,
+    template: `%s | ${siteInfo.brand}`
   },
-  description: "環境に優しい高性能無煙焼却炉ソリューションを提供するProOneTechの公式サイト。",
+  description: `環境に優しい高性能無煙焼却炉ソリューションを提供する${siteInfo.brand}の公式サイト。`,
   icons: {
     icon: "/favicon.ico"
   }

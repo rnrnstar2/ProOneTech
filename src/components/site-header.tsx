@@ -11,6 +11,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import { siteInfo } from "@/lib/site-info"
 
 export function SiteHeader() {
     const [open, setOpen] = useState(false)
@@ -21,7 +22,7 @@ export function SiteHeader() {
                 {/* ロゴ */}
                 <Link href="/" className="flex items-center space-x-2">
                     <span className="font-bold text-xl md:text-2xl">
-                        ProOneTech
+                        {siteInfo.brand}
                     </span>
                 </Link>
 

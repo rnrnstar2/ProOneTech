@@ -23,16 +23,14 @@ export function SiteHeader() {
                 {/* ロゴ */}
                 <Link href="/" className="flex items-center space-x-2">
                     <span className="sr-only">{siteInfo.brand}</span>
-                    <div className="h-10 w-10 flex items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-blue-200">
-                        <Image
-                            src="/images/pot.png"
-                            alt={`${siteInfo.brand} ロゴ`}
-                            width={32}
-                            height={32}
-                            className="h-8 w-8 object-contain"
-                            priority
-                        />
-                    </div>
+                    <Image
+                        src="/images/pot.png"
+                        alt={`${siteInfo.brand} ロゴ`}
+                        width={32}
+                        height={32}
+                        className="h-8 w-8 object-contain"
+                        priority
+                    />
                 </Link>
 
                 {/* デスクトップナビゲーション */}

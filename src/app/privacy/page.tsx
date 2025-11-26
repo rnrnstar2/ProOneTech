@@ -59,7 +59,7 @@ export default function PrivacyPage() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-8 max-w-4xl">
         <div className="space-y-3">
-          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-300 px-3 py-1 rounded-full">
             プライバシー
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">プライバシーポリシー</h1>

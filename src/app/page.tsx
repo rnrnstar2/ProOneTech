@@ -20,10 +20,10 @@ export default function Home() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-            className="h-full w-full object-cover opacity-60 scale-105"
+            className="h-full w-full object-cover opacity-70 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/50 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white"></div>
         <div className="container relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-600/20 px-4 py-2 backdrop-blur-sm mb-4 sm:mb-6 border border-blue-400/30">
             <Flame className="h-4 w-4 text-blue-400" />
@@ -43,7 +43,7 @@ export default function Home() {
                 製品を見る <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
-            <Button variant="outline" size="lg" className="bg-white text-blue-700 border-blue-200 hover:bg-blue-50 text-lg px-8 h-14 rounded-full shadow-sm" asChild>
+            <Button variant="outline" size="lg" className="bg-white text-blue-800 border-blue-300 hover:bg-blue-100 text-lg px-8 h-14 rounded-full shadow-sm" asChild>
               <Link href="/#contact">お問い合わせ</Link>
             </Button>
           </div>
@@ -55,7 +55,7 @@ export default function Home() {
         <div className="container">
           <div className="grid gap-8 lg:grid-cols-2 items-center">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-sm border border-blue-200 text-blue-700">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-sm border border-blue-300 text-blue-800">
                 R2 事業再構築
               </div>
               <h2 className="text-3xl sm:text-4xl font-extrabold leading-tight">
@@ -69,16 +69,16 @@ export default function Home() {
                 <Button asChild className="rounded-full bg-blue-600 text-white hover:bg-blue-700">
                   <Link href="/summary">概要を見る</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
+                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
                   <Link href="/instruction">取扱説明</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
+                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
                   <Link href="/drawing">図面</Link>
                 </Button>
               </div>
             </div>
             <div className="rounded-3xl bg-white border border-slate-200 shadow-lg p-6 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700 border border-blue-200">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 border border-blue-300">
                 ベストファイヤー HBF601-BL-Ⅱ型
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
@@ -91,7 +91,7 @@ export default function Home() {
                   "温度センサ＋助燃装置で安全運転",
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5" />
+                    <CheckCircle2 className="h-5 w-5 text-blue-800 mt-0.5" />
                     <span className="text-sm text-slate-700 leading-relaxed">{item}</span>
                   </div>
                 ))}
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="grid gap-12 md:grid-cols-3">
             <div className="flex flex-col items-center text-center group">
-              <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-blue-600 transition-all group-hover:scale-110 group-hover:shadow-xl">
+              <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-blue-800 transition-all group-hover:scale-110 group-hover:shadow-xl">
                 <Flame className="h-12 w-12" />
               </div>
               <h3 className="text-2xl font-bold mb-3">無煙技術</h3>
@@ -200,9 +200,9 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">
-            <Card className="h-full border-blue-100 bg-white shadow-sm">
+            <Card className="h-full border-blue-300 bg-white shadow-sm">
               <CardHeader>
-                <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">ダイオキシン類対策特別措置法</div>
+                <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800">ダイオキシン類対策特別措置法</div>
                 <CardTitle className="text-xl mt-2">届出不要枠内</CardTitle>
                 <CardDescription className="text-sm">
                   火床面積0.5m²未満、焼却能力50kg/h未満のため届出・年1回測定の対象外。
@@ -210,9 +210,9 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-2 text-sm text-muted-foreground">
                 <p>対象規模（0.5m²以上/50kg/h以上）を超える場合は届出と年1回の測定が義務。</p>
-                <p className="text-blue-700 font-semibold">ベストファイヤーは該当外。</p>
-                <details className="mt-2 rounded-lg border border-blue-100 bg-blue-50/40 px-3 py-2 text-slate-700">
-                  <summary className="cursor-pointer text-blue-700 font-semibold">詳細を見る</summary>
+                <p className="text-blue-800 font-semibold">ベストファイヤーは該当外。</p>
+                <details className="mt-2 rounded-lg border border-blue-300 bg-blue-100/40 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer text-blue-800 font-semibold">詳細を見る</summary>
                   <ul className="list-disc pl-5 mt-2 space-y-1 text-xs leading-relaxed">
                     <li>設置60日前までの届出義務（対象規模のみ）。</li>
                     <li>年1回以上、排ガス・ばい塵・焼却灰を測定し報告。</li>
@@ -351,7 +351,7 @@ export default function Home() {
                 </div>
                 <CardHeader>
                   <CardTitle className="text-lg line-clamp-1">{product.title}</CardTitle>
-                  <p className="text-2xl font-bold text-blue-700">¥{product.price.toLocaleString()}</p>
+                  <p className="text-2xl font-bold text-blue-800">¥{product.price.toLocaleString()}</p>
                 </CardHeader>
                 <CardContent className="mt-auto">
                   <Button asChild variant="outline" className="w-full">
@@ -406,7 +406,7 @@ export default function Home() {
                     </Badge>
                     <span className="text-xs text-muted-foreground">{new Date(post.date).toLocaleDateString('ja-JP')}</span>
                   </div>
-                  <CardTitle className="line-clamp-2 text-xl group-hover:text-blue-600 transition-colors">{post.title}</CardTitle>
+                  <CardTitle className="line-clamp-2 text-xl group-hover:text-blue-800 transition-colors">{post.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="line-clamp-3 text-sm text-muted-foreground">
@@ -414,7 +414,7 @@ export default function Home() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="link" className="px-0 text-blue-600 font-semibold h-auto group/btn" asChild>
+                  <Button variant="link" className="px-0 text-blue-800 font-semibold h-auto group/btn" asChild>
                     <Link href={`/posts/${post.id}`}>
                       記事を読む <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
                     </Link>
@@ -443,7 +443,7 @@ export default function Home() {
             <Button
               variant="outline"
               size="lg"
-              className="border-blue-200 text-blue-700 hover:bg-blue-50 px-10 h-16 text-lg rounded-full bg-white"
+              className="border-blue-300 text-blue-800 hover:bg-blue-100 px-10 h-16 text-lg rounded-full bg-white"
             >
               サポートに連絡
             </Button>

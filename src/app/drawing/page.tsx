@@ -25,7 +25,7 @@ export default function DrawingPage() {
     <div className="min-h-screen bg-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-6">
         <div className="space-y-3">
-          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-300">
             設計資料
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">焼却炉図面</h1>
@@ -39,7 +39,7 @@ export default function DrawingPage() {
             <Card key={item.title} className="overflow-hidden border-slate-800 bg-white/50">
               <CardHeader>
                 <div className="flex items-center gap-2 mb-2">
-                  <Badge variant="outline" className="border-blue-200 text-blue-100">PDF/IMG</Badge>
+                  <Badge variant="outline" className="border-blue-300 text-blue-100">PDF/IMG</Badge>
                 </div>
                 <CardTitle className="text-2xl text-slate-900">{item.title}</CardTitle>
                 <p className="text-slate-600 text-sm leading-relaxed">{item.description}</p>

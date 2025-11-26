@@ -23,7 +23,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-6 max-w-5xl">
         <div className="space-y-3">
-          <span className="inline-flex items-center rounded-full bg-blue-50 px-3 py-1 text-sm border border-blue-200 text-blue-700">
+          <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-sm border border-blue-300 text-blue-800">
             お問い合わせ
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">ご相談・お見積りの依頼</h1>
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <Button
               asChild
               variant="outline"
-              className="rounded-full border-blue-200 bg-white text-blue-700 hover:bg-blue-50"
+              className="rounded-full border-blue-300 bg-white text-blue-800 hover:bg-blue-100"
             >
               <Link href="/drawing">図面を見る</Link>
             </Button>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                 <Button
                   asChild
                   variant="outline"
-                  className="rounded-full border-white bg-white text-blue-700 hover:bg-blue-50"
+                  className="rounded-full border-white bg-white text-blue-800 hover:bg-blue-100"
                 >
                   <a href="https://maps.app.goo.gl/pQXoza1D9yESbbVv7" target="_blank" rel="noreferrer">
                     地図を開く

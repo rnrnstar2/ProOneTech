@@ -60,12 +60,12 @@ export default function CompanyPage() {
           <img
             src="/images/odajimusyo.jpeg"
             alt={`${siteInfo.brand} オフィス外観`}
-            className="h-full w-full object-cover opacity-25 scale-105 blur-[2px]"
+            className="h-full w-full object-cover opacity-50 scale-105 blur-[2px]"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 space-y-6 max-w-5xl">
-          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-300 px-3 py-1 rounded-full">
             企業情報
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">
@@ -78,7 +78,7 @@ export default function CompanyPage() {
             <Button asChild className="rounded-full">
               <Link href="/contact">お問い合わせ</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
+            <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
               <Link href="/drawing">図面を見る</Link>
             </Button>
           </div>
@@ -97,7 +97,7 @@ export default function CompanyPage() {
                 <CardContent className="py-4 px-4 sm:px-6 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                   <span className="text-sm font-semibold text-slate-500">{item.label}</span>
                   {item.href ? (
-                    <Link href={item.href} className="text-blue-600 hover:underline font-medium">
+                    <Link href={item.href} className="text-blue-800 hover:underline font-medium">
                       {item.value}
                     </Link>
                   ) : (
@@ -121,7 +121,7 @@ export default function CompanyPage() {
               <Card key={office.title} className="h-full border-slate-200">
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
-                    <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-100">
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-300">
                       {office.title}
                     </Badge>
                   </div>
@@ -132,7 +132,7 @@ export default function CompanyPage() {
                   <div className="space-y-1">
                     <div>
                       <span className="font-semibold">TEL：</span>
-                      <a href={`tel:${office.tel}`} className="text-blue-600 hover:underline">
+                      <a href={`tel:${office.tel}`} className="text-blue-800 hover:underline">
                         {office.tel}
                       </a>
                     </div>

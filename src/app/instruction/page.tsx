@@ -78,12 +78,12 @@ export default function InstructionPage() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt="操作盤イメージ"
-            className="h-full w-full object-cover opacity-20 blur-[1px] scale-105"
+            className="h-full w-full object-cover opacity-50 blur-[1px] scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white" />
         <div className="container relative z-10 py-14 sm:py-16 space-y-4 max-w-4xl">
-          <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
+          <Badge variant="secondary" className="bg-blue-100 text-blue-800 border-blue-300 px-3 py-1 rounded-full">
             取扱説明
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-slate-900">安全にお使いいただくために</h1>
@@ -94,7 +94,7 @@ export default function InstructionPage() {
             <Button asChild className="rounded-full">
               <Link href="/specification">仕様を確認</Link>
             </Button>
-            <Button asChild variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
+            <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
               <Link href="/drawing">図面を見る</Link>
             </Button>
           </div>
@@ -126,7 +126,7 @@ export default function InstructionPage() {
                   </div>
                 ))}
               </div>
-              <div className="rounded-lg bg-blue-50 text-blue-900 border border-blue-100 p-4 text-sm leading-relaxed">
+              <div className="rounded-lg bg-blue-100 text-blue-900 border border-blue-300 p-4 text-sm leading-relaxed">
                 注意事項は状況によって重大事故につながる可能性があります。必ず遵守してください。
               </div>
             </CardContent>
@@ -139,7 +139,7 @@ export default function InstructionPage() {
             <CardContent className="grid gap-3 sm:grid-cols-2">
               {safetyRequests.map((item, idx) => (
                 <div key={item} className="flex gap-3">
-                  <span className="mt-1 h-7 w-7 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 text-sm font-bold">
+                  <span className="mt-1 h-7 w-7 flex items-center justify-center rounded-full bg-blue-100 text-blue-800 text-sm font-bold">
                     {idx + 1}
                   </span>
                   <p className="text-sm text-slate-700 leading-relaxed">{item}</p>
@@ -182,7 +182,7 @@ export default function InstructionPage() {
                     <p className="text-sm text-slate-700 leading-relaxed">{step.detail}</p>
                   </div>
                 ))}
-                <div className="rounded-lg bg-blue-50 text-blue-900 border border-blue-100 p-3 text-sm leading-relaxed">
+                <div className="rounded-lg bg-blue-100 text-blue-900 border border-blue-300 p-3 text-sm leading-relaxed">
                   二重扉オプションなら燃焼中の再投入が可能です。標準扉では再投入できません。
                 </div>
               </CardContent>

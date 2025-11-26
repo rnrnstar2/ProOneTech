@@ -52,18 +52,18 @@ export default function SummaryPage() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-            className="h-full w-full object-cover opacity-55 scale-105"
+            className="h-full w-full object-cover opacity-70 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 flex flex-col gap-8">
-          <div className="inline-flex items-center gap-2 self-start rounded-full bg-blue-50 px-4 py-2 text-blue-700 border border-blue-200 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 self-start rounded-full bg-blue-100 px-4 py-2 text-blue-800 border border-blue-300 backdrop-blur-sm">
             <span className="text-sm font-semibold">煙を抑える多段燃焼設計</span>
           </div>
           <div className="max-w-3xl space-y-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
               焼却炉概要
-              <span className="block text-blue-600 text-2xl sm:text-3xl font-semibold mt-3">
+              <span className="block text-blue-800 text-2xl sm:text-3xl font-semibold mt-3">
                 ベストファイヤー HBF601-BL-Ⅱ 型
               </span>
             </h1>
@@ -75,7 +75,7 @@ export default function SummaryPage() {
               <Button asChild size="lg" className="rounded-full px-8">
                 <Link href="/products">製品を見る</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="rounded-full border-blue-200 text-blue-700 hover:bg-blue-50">
+              <Button asChild size="lg" variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
                 <Link href="/contact">お問い合わせ</Link>
               </Button>
             </div>
@@ -85,7 +85,7 @@ export default function SummaryPage() {
             {highlights.map((item) => (
               <Card key={item.label} className="bg-white border-slate-200 shadow-sm">
                 <CardHeader>
-                  <CardTitle className="text-sm text-blue-700 font-semibold">{item.label}</CardTitle>
+                  <CardTitle className="text-sm text-blue-800 font-semibold">{item.label}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-xl font-bold text-slate-900">{item.value}</p>
@@ -117,7 +117,7 @@ export default function SummaryPage() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
-                  <Button asChild variant="link" className="px-0 text-blue-600">
+                  <Button asChild variant="link" className="px-0 text-blue-800">
                     <Link href={item.href}>詳しく見る →</Link>
                   </Button>
                 </CardContent>

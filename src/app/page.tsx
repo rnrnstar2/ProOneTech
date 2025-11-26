@@ -142,7 +142,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative w-full overflow-hidden rounded-3xl bg-white flex items-center justify-center border border-slate-200 shadow-lg">
+            <div className="relative w-full overflow-hidden flex items-center justify-center">
               <img
                 src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
                 alt={`${siteInfo.brand} 焼却炉ビジュアル`}

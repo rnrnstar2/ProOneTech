@@ -30,9 +30,6 @@ export function SiteHeader() {
                         className="h-8 w-8 rounded-md shadow-sm ring-1 ring-blue-200 bg-white"
                         priority
                     />
-                    <span className="font-bold text-xl md:text-2xl">
-                        {siteInfo.brand}
-                    </span>
                 </Link>
 
                 {/* デスクトップナビゲーション */}

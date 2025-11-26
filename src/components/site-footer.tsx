@@ -123,16 +123,16 @@ export function SiteFooter() {
 
                 <Separator className="my-8 bg-slate-700" />
 
-                <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+                    <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                     <p className="text-center text-sm">
                         © {currentYear} {siteInfo.company}（{siteInfo.brand}）. All rights reserved.
                     </p>
                     <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-sm">
-                        <Link href="#" className="transition-colors hover:text-blue-400">
+                        <Link href="/privacy" className="transition-colors hover:text-blue-400">
                             プライバシーポリシー
                         </Link>
-                        <Link href="#" className="transition-colors hover:text-blue-400">
-                            利用規約
+                        <Link href="/legal" className="transition-colors hover:text-blue-400">
+                            特定商取引法
                         </Link>
                     </div>
                 </div>

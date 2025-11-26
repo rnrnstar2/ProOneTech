@@ -305,72 +305,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 部品・オプション価格（WP「部品単価」より） */}
-      <section className="section-py bg-white">
-        <div className="container space-y-10">
-          <div className="space-y-3 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold">部品・オプション価格</h2>
-            <p className="text-muted-foreground max-w-3xl mx-auto">
-              加工部品の一部をピックアップしています。詳細は製品一覧からご確認ください。
-            </p>
-          </div>
-
-          <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr] items-start">
-            <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
-              <img
-                src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
-                alt="部品価格表"
-                className="h-full w-full object-contain"
-              />
-            </div>
-            <Card className="border-slate-200 h-full">
-              <CardHeader>
-                <CardTitle className="text-2xl">価格・部品のご案内</CardTitle>
-                <CardDescription>価格は都度お問い合わせください。詳細は製品一覧でご確認いただけます。</CardDescription>
-              </CardHeader>
-              <CardFooter className="justify-end gap-3">
-                <Button asChild variant="outline">
-                  <Link href="/products">部品一覧を見る</Link>
-                </Button>
-                <Button asChild>
-                  <Link href="/contact">見積もり依頼</Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {products.slice(0, 3).map((product) => (
-              <Card key={product.id} className="flex flex-col overflow-hidden border-slate-200">
-                <div className="relative aspect-square w-full bg-gray-100">
-                  {product.image ? (
-                    <img src={product.image} alt={product.title} className="h-full w-full object-cover" />
-                  ) : (
-                    <div className="flex h-full items-center justify-center text-slate-600 text-5xl">📦</div>
-                  )}
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-lg line-clamp-1">{product.title}</CardTitle>
-                  <p className="text-2xl font-bold text-blue-800">¥{product.price.toLocaleString()}</p>
-                </CardHeader>
-                <CardContent className="mt-auto">
-                  <Button asChild variant="outline" className="w-full">
-                    <Link href={`/products/${product.id}`}>詳細を見る</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          <div className="flex justify-center">
-            <Button asChild className="rounded-full">
-              <Link href="/products">部品一覧を見る</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* 最新ニュース */}
+            {/* 最新ニュース */
+{/* 最新ニュース */}
       <section id="blog" className="section-py bg-gray-50">
         <div className="container">
           <div className="flex items-center justify-between mb-12">

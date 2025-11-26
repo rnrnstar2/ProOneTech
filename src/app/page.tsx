@@ -173,6 +173,51 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 会社概要セクション */}
+      <section id="about" className="section-py bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+        <div className="container">
+          <div className="grid gap-12 lg:grid-cols-2 items-center">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
+                ProOneTechについて
+              </h2>
+              <p className="text-lg text-slate-300 leading-relaxed">
+                ProOneTechは、最新の廃棄物管理ニーズに対応する高効率焼却炉の専門メーカーです。
+                環境に配慮した持続可能で無煙、かつ耐久性に優れたソリューションを提供することが私たちの使命です。
+              </p>
+              <p className="text-lg text-slate-300 leading-relaxed">
+                20年以上にわたる熱工学の経験を活かし、環境への影響を最小限に抑えながら効率を最大化する燃焼技術を完成させました。
+              </p>
+              <div className="grid grid-cols-3 gap-6 pt-6">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-blue-400 mb-2">20+</div>
+                  <div className="text-sm text-slate-400">年の実績</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-blue-400 mb-2">1000+</div>
+                  <div className="text-sm text-slate-400">導入実績</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-blue-400 mb-2">100%</div>
+                  <div className="text-sm text-slate-400">顧客満足度</div>
+                </div>
+              </div>
+              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full" asChild>
+                <Link href="/summary">詳しく見る</Link>
+              </Button>
+            </div>
+            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 flex items-center justify-center border border-slate-700/60">
+              <img
+                src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
+                alt="ProOneTech 焼却炉ビジュアル"
+                className="max-h-full max-w-full object-contain"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent pointer-events-none"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
       <section className="section-py bg-slate-50">
         <div className="container space-y-12">
@@ -286,51 +331,6 @@ export default function Home() {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* 会社概要セクション */}
-      <section id="about" className="section-py bg-gradient-to-br from-slate-900 to-slate-800 text-white">
-        <div className="container">
-          <div className="grid gap-12 lg:grid-cols-2 items-center">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                ProOneTechについて
-              </h2>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                ProOneTechは、最新の廃棄物管理ニーズに対応する高効率焼却炉の専門メーカーです。
-                環境に配慮した持続可能で無煙、かつ耐久性に優れたソリューションを提供することが私たちの使命です。
-              </p>
-              <p className="text-lg text-slate-300 leading-relaxed">
-                20年以上にわたる熱工学の経験を活かし、環境への影響を最小限に抑えながら効率を最大化する燃焼技術を完成させました。
-              </p>
-              <div className="grid grid-cols-3 gap-6 pt-6">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">20+</div>
-                  <div className="text-sm text-slate-400">年の実績</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">1000+</div>
-                  <div className="text-sm text-slate-400">導入実績</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-400 mb-2">100%</div>
-                  <div className="text-sm text-slate-400">顧客満足度</div>
-                </div>
-            </div>
-              <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full" asChild>
-                <Link href="/summary">詳しく見る</Link>
-              </Button>
-          </div>
-          <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-            <img
-              src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
-              alt="ProOneTech 焼却炉ビジュアル"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-          </div>
-        </div>
         </div>
       </section>
 

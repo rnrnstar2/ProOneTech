@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { posts, products } from "@/lib/data"
+import { posts } from "@/lib/data"
 import { siteInfo } from "@/lib/site-info"
 import { ArrowRight, CheckCircle2, Flame, Shield, Wrench } from "lucide-react"
 
@@ -65,7 +65,7 @@ export default function Home() {
                 ベストファイヤー HBF601-BL-Ⅱ型。届出不要・高い燃焼効率・国内製造・構造基準適合補償・廃プラ対応。
                 最先端の無煙焼却技術で環境に配慮した廃棄物処理を実現します。
               </p>
-              <div className="rounded-3xl bg-gradient-to-br from-blue-50 to-white border border-blue-200 shadow-sm p-6 space-y-4">
+              <div className=" bg-gradient-to-br from-blue-50 to-white border border-blue-200 shadow-sm p-6 space-y-4">
                 <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 border border-blue-300">
                   ベストファイヤー HBF601-BL-Ⅱ型
                 </div>
@@ -98,12 +98,12 @@ export default function Home() {
               </div>
             </div>
             <div className="relative order-1 lg:order-2">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
-              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-slate-50 to-white">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400  blur-2xl opacity-20"></div>
+              <div className="relative overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-slate-50 to-white">
                 <img
-                  src="/images/product-bestfire.png"
-                  alt="ベストファイヤー HBF601-BL-Ⅱ型 無煙焼却炉"
-                  className="h-full w-full object-cover"
+                  src="/images/MG_3825-1.jpeg"
+                  alt="プロワンテック 無煙焼却炉 稼働中"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
@@ -122,42 +122,45 @@ export default function Home() {
               最先端技術で、環境保護と効率性を両立
             </p>
           </div>
-          <div className="space-y-8">
-            <div className="relative w-full overflow-hidden flex items-center justify-center">
+
+          <div className="relative max-w-5xl mx-auto">
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 blur-2xl opacity-20"></div>
+            <div className="relative overflow-hidden shadow-2xl border-4 border-white bg-white">
               <img
                 src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
-                alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-                className="w-full h-auto max-h-[420px] object-contain"
+                alt="プロワンテック 純国内製造 最新設備 精密加工"
+                className="w-full h-auto"
               />
             </div>
-            <div className="grid gap-8 md:grid-cols-3">
-              <div className="flex flex-col items-center text-center group">
-                <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 p-6 text-blue-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                  <Flame className="h-12 w-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">無煙技術</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  先進的な燃焼技術により、煙や有害物質の排出を最小限に抑え、厳しい環境基準をクリアします。
-                </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
+            <div className="flex flex-col items-center text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-2">
+                <Flame className="h-8 w-8 text-blue-600" />
               </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="mb-6 rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-6 text-green-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                  <Shield className="h-12 w-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">高耐久性</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  高品質な素材を使用し、高温環境下でも長期間の連続運転に耐える設計です。
-                </p>
+              <h3 className="text-2xl font-bold">無煙技術</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                煙を抑える構造で、環境基準への適合を目指した設計です。
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-2">
+                <Shield className="h-8 w-8 text-green-600" />
               </div>
-              <div className="flex flex-col items-center text-center group">
-                <div className="mb-6 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-200 p-6 text-orange-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                  <Wrench className="h-12 w-12" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">簡単メンテナンス</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  ユーザーフレンドリーな設計で、メンテナンス作業を簡素化し、ランニングコストを低減します。
-                </p>
+              <h3 className="text-2xl font-bold">高耐久性</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                高温環境を考慮し、耐久性に配慮した構造です。
+              </p>
+            </div>
+            <div className="flex flex-col items-center text-center space-y-3">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-orange-100 mb-2">
+                <Wrench className="h-8 w-8 text-orange-600" />
               </div>
+              <h3 className="text-2xl font-bold">簡単メンテナンス</h3>
+              <p className="text-muted-foreground leading-relaxed">
+                メンテナンス作業を行いやすい構造です。
+              </p>
             </div>
           </div>
         </div>
@@ -174,8 +177,8 @@ export default function Home() {
           </div>
 
           <div className="relative max-w-4xl mx-auto mb-12">
-            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
-            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400  blur-2xl opacity-20"></div>
+            <div className="relative aspect-[16/9]  overflow-hidden shadow-2xl border-4 border-white">
               <img
                 src="/images/legal-compliance.png"
                 alt="法律対応と認証"
@@ -301,7 +304,7 @@ export default function Home() {
           </div>
 
           <div className="space-y-6">
-            <div className="aspect-[16/9] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-100 flex items-center justify-center">
+            <div className="aspect-[16/9] w-full overflow-hidden  border border-slate-200 shadow-sm bg-gray-100 flex items-center justify-center">
               <img
                 src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
                 alt="部品価格表"
@@ -392,15 +395,16 @@ export default function Home() {
             専門チームが迅速に対応いたします。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 px-10 h-16 text-lg rounded-full shadow-xl">
-              お見積り依頼
+            <Button size="lg" className="bg-blue-600 text-white hover:bg-blue-700 px-10 h-16 text-lg rounded-full shadow-xl hover:shadow-2xl transition-all" asChild>
+              <Link href="/contact">お見積り依頼</Link>
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-blue-300 text-blue-800 hover:bg-blue-100 px-10 h-16 text-lg rounded-full bg-white"
+              className="border-blue-300 text-blue-800 hover:bg-blue-100 px-10 h-16 text-lg rounded-full bg-white shadow-md hover:shadow-lg transition-all"
+              asChild
             >
-              サポートに連絡
+              <Link href="/contact">サポートに連絡</Link>
             </Button>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Mail, Phone, MapPin } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
 import { siteInfo } from "@/lib/site-info"
 
@@ -16,17 +16,6 @@ export function SiteFooter() {
                         <p className="text-sm leading-relaxed text-slate-600">
                             無煙焼却炉「ベストファイヤー」を製造するプロワンテック事業部。環境に優しく効率的な廃棄物管理ソリューションを提供します。
                         </p>
-                        <div className="flex gap-3">
-                            <a href="#" className="rounded-full bg-gray-100 p-2 transition-colors hover:bg-blue-100" aria-label="Facebook">
-                                <Facebook className="h-4 w-4" />
-                            </a>
-                            <a href="#" className="rounded-full bg-gray-100 p-2 transition-colors hover:bg-blue-100" aria-label="Twitter">
-                                <Twitter className="h-4 w-4" />
-                            </a>
-                            <a href="#" className="rounded-full bg-gray-100 p-2 transition-colors hover:bg-blue-100" aria-label="LinkedIn">
-                                <Linkedin className="h-4 w-4" />
-                            </a>
-                        </div>
                     </div>
 
                     {/* クイックリンク */}

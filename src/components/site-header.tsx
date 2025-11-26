@@ -26,9 +26,9 @@ export function SiteHeader() {
                     <Image
                         src="/images/pot.png"
                         alt={`${siteInfo.brand} ロゴ`}
-                        width={32}
+                        width={120}
                         height={32}
-                        className="h-8 w-8 object-contain"
+                        className="h-8 w-auto object-contain"
                         priority
                     />
                 </Link>

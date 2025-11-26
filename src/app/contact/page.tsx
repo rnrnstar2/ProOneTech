@@ -32,7 +32,11 @@ export default function ContactPage() {
             <Button asChild className="rounded-full">
               <a href="tel:0866-84-1311">電話する</a>
             </Button>
-            <Button asChild variant="outline" className="rounded-full border-white/30 text-white hover:bg-white/10">
+            <Button
+              asChild
+              variant="outline"
+              className="rounded-full border-white bg-white text-blue-700 hover:bg-blue-50"
+            >
               <Link href="/drawing">図面を見る</Link>
             </Button>
           </div>
@@ -99,7 +103,11 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent className="space-y-3 text-slate-100">
                 <p className="text-sm text-slate-300">Googleマップでルートを確認</p>
-                <Button asChild variant="outline" className="rounded-full border-white/30 text-white hover:bg-white/10">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full border-white bg-white text-blue-700 hover:bg-blue-50"
+                >
                   <a href="https://maps.app.goo.gl/pQXoza1D9yESbbVv7" target="_blank" rel="noreferrer">
                     地図を開く
                   </a>

@@ -153,6 +153,14 @@ export default function Home() {
               <CardContent className="space-y-2 text-sm text-muted-foreground">
                 <p>対象規模（0.5m²以上/50kg/h以上）を超える場合は届出と年1回の測定が義務。</p>
                 <p className="text-blue-700 font-semibold">ベストファイヤーは該当外。</p>
+                <details className="mt-2 rounded-lg border border-blue-100 bg-blue-50/40 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer text-blue-700 font-semibold">詳細を見る</summary>
+                  <ul className="list-disc pl-5 mt-2 space-y-1 text-xs leading-relaxed">
+                    <li>設置60日前までの届出義務（対象規模のみ）。</li>
+                    <li>年1回以上、排ガス・ばい塵・焼却灰を測定し報告。</li>
+                    <li>基準超過時は改善義務。排ガス/ばい塵/焼却灰の基準：5 / 3 / 3 ng-TEQ/m³N。</li>
+                  </ul>
+                </details>
               </CardContent>
             </Card>
 
@@ -166,6 +174,14 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-2 text-sm text-muted-foreground">
                 <p>多段燃焼＋強制送風＋温度センサ＋バーナーで基準をクリア。</p>
+                <details className="mt-2 rounded-lg border border-emerald-100 bg-emerald-50/40 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer text-emerald-700 font-semibold">詳細を見る</summary>
+                  <ul className="list-disc pl-5 mt-2 space-y-1 text-xs leading-relaxed">
+                    <li>燃焼ガス800℃以上で焼却できる構造。</li>
+                    <li>十分な通風と、燃焼中の外気遮断＋定量投入。</li>
+                    <li>温度測定装置と助燃装置を設置（自己加熱可能な廃棄物のみの場合を除く）。</li>
+                  </ul>
+                </details>
               </CardContent>
             </Card>
 
@@ -179,6 +195,13 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-2 text-sm text-muted-foreground">
                 <p>設置距離の目安：上方2.5m以上 / 側方2.0m以上 / 前方3.0m以上 / 後方2.0m以上。</p>
+                <details className="mt-2 rounded-lg border border-amber-100 bg-amber-50/40 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer text-amber-700 font-semibold">詳細を見る</summary>
+                  <ul className="list-disc pl-5 mt-2 space-y-1 text-xs leading-relaxed">
+                    <li>据付面積2m²以上は設置7日前までに消防長へ届出。</li>
+                    <li>ベストファイヤーは面積1.2m²のため届出対象外。</li>
+                  </ul>
+                </details>
               </CardContent>
             </Card>
           </div>
@@ -196,6 +219,12 @@ export default function Home() {
                   <li>焼却灰・未燃物を飛散させない。</li>
                 </ul>
                 <p className="text-amber-700 font-semibold">違反は懲役・罰金の対象。適正運用が必須です。</p>
+                <details className="mt-2 rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer font-semibold text-slate-800">詳細を見る</summary>
+                  <p className="text-xs leading-relaxed mt-2">
+                    違反者には「3年以下の懲役、300万円以下の罰金またはその両方」。法人には加重罰が適用される場合があります。
+                  </p>
+                </details>
               </CardContent>
             </Card>
             <Card className="border-slate-200">
@@ -206,6 +235,12 @@ export default function Home() {
               <CardContent className="text-sm text-muted-foreground space-y-2">
                 <p>野焼きは違法です。罰則：5年以下の懲役または1,000万円以下の罰金（法人は最大1億円）。</p>
                 <p>適法な焼却炉で、基準に沿った運用を行ってください。</p>
+                <details className="mt-2 rounded-lg border border-slate-200 bg-slate-100 px-3 py-2 text-slate-700">
+                  <summary className="cursor-pointer font-semibold text-slate-800">詳細を見る</summary>
+                  <p className="text-xs leading-relaxed mt-2">
+                    焼却灰・未燃物の飛散を防ぎ、煙突からの黒煙を抑えることが求められます。違反時は個人に加え法人にも加重罰が科されます。
+                  </p>
+                </details>
               </CardContent>
             </Card>
           </div>

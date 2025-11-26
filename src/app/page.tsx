@@ -344,20 +344,20 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr]">
+          <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr] items-start">
             <div className="grid gap-4">
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-100">
                 <img
                   src="/images/スクリーンショット-2023-01-10-14.46.12.png"
                   alt="部品一覧イメージ（価格表）"
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-slate-100">
                 <img
                   src="/images/スクリーンショット-2022-12-13-15.03.00.png"
                   alt="部品一覧イメージ（一覧表）"
-                  className="w-full h-full object-cover"
+                  className="h-full w-full object-cover"
                 />
               </div>
             </div>

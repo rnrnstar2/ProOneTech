@@ -1,3 +1,6 @@
+ "use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -19,6 +22,33 @@ export const metadata = {
 }
 
 export default function ContactPage() {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [tel, setTel] = useState("")
+  const [message, setMessage] = useState("")
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      alert("お名前・メールアドレス・お問い合わせ内容は必須です。")
+      return
+    }
+
+    const body = [
+      `お名前: ${name}`,
+      `メール: ${email}`,
+      tel ? `電話: ${tel}` : "",
+      "",
+      "お問い合わせ内容:",
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n")
+
+    const mailto = `mailto:${siteInfo.email.main}?subject=${encodeURIComponent("【サイト問い合わせ】" + name)}&body=${encodeURIComponent(body)}`
+    window.location.href = mailto
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 via-white to-white text-slate-900">
       <section className="container py-12 sm:py-16 space-y-6 max-w-5xl">
@@ -45,41 +75,69 @@ export default function ContactPage() {
         </div>
 
         <div className="grid gap-8 lg:grid-cols-2">
-          <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+          <Card className="bg-white border-slate-200 shadow-sm">
             <CardHeader>
               <CardTitle className="text-2xl text-slate-900">フォームで問い合わせる</CardTitle>
               <p className="text-sm text-slate-600">
                 内容を確認後、担当からご連絡いたします。
               </p>
+              <p className="text-xs text-slate-500">送信するとメールソフトが起動します。</p>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid gap-3">
-                <Label htmlFor="name" className="text-slate-900">お名前</Label>
-                <Input id="name" placeholder="例）山田 太郎" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
-              </div>
-              <div className="grid gap-3">
-                <Label htmlFor="email" className="text-slate-900">メールアドレス</Label>
-                <Input id="email" type="email" placeholder="you@example.com" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
-              </div>
-              <div className="grid gap-3">
-                <Label htmlFor="tel" className="text-slate-900">電話番号</Label>
-                <Input id="tel" type="tel" placeholder="080-xxxx-xxxx" className="bg-white/10 border-white/20 text-slate-900 placeholder:text-slate-600" />
-              </div>
-              <div className="grid gap-3">
-                <Label htmlFor="message" className="text-slate-900">お問い合わせ内容</Label>
-                <textarea
-                  id="message"
-                  rows={5}
-                  placeholder="導入時期や用途などをご記入ください。"
-                  className="rounded-md border border-white/20 bg-white/10 p-3 text-sm text-slate-900 placeholder:text-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                />
-              </div>
-              <Button className="w-full rounded-full">送信する</Button>
+              <form className="space-y-4" onSubmit={handleSubmit}>
+                <div className="grid gap-3">
+                  <Label htmlFor="name" className="text-slate-900">お名前 *</Label>
+                  <Input
+                    id="name"
+                    placeholder="例）山田 太郎"
+                    className="bg-white border-slate-200 text-slate-900 placeholder:text-slate-500"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="grid gap-3">
+                  <Label htmlFor="email" className="text-slate-900">メールアドレス *</Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="you@example.com"
+                    className="bg-white border-slate-200 text-slate-900 placeholder:text-slate-500"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="grid gap-3">
+                  <Label htmlFor="tel" className="text-slate-900">電話番号</Label>
+                  <Input
+                    id="tel"
+                    type="tel"
+                    placeholder="080-xxxx-xxxx"
+                    className="bg-white border-slate-200 text-slate-900 placeholder:text-slate-500"
+                    value={tel}
+                    onChange={(e) => setTel(e.target.value)}
+                  />
+                </div>
+                <div className="grid gap-3">
+                  <Label htmlFor="message" className="text-slate-900">お問い合わせ内容 *</Label>
+                  <textarea
+                    id="message"
+                    rows={5}
+                    placeholder="導入時期や用途などをご記入ください。"
+                    className="rounded-md border border-slate-200 bg-white p-3 text-sm text-slate-900 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                  />
+                </div>
+                <Button type="submit" className="w-full rounded-full">送信する</Button>
+              </form>
             </CardContent>
           </Card>
 
           <div className="space-y-4">
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+            <Card className="bg-white border-slate-200 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-2xl text-slate-900">連絡先・所在地</CardTitle>
               </CardHeader>
@@ -99,7 +157,7 @@ export default function ContactPage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-white/5 border-white/10 backdrop-blur-sm">
+            <Card className="bg-white border-slate-200 shadow-sm">
               <CardHeader>
                 <CardTitle className="text-xl text-slate-900">工場アクセス</CardTitle>
               </CardHeader>

@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { posts } from "@/lib/data"
+import { posts, products } from "@/lib/data"
 import { ArrowRight, CheckCircle2, Flame, Shield, Wrench } from "lucide-react"
 
 export const metadata = {

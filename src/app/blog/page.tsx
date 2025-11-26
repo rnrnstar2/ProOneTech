@@ -4,10 +4,11 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight, Calendar } from "lucide-react"
+import { siteInfo } from "@/lib/site-info"
 
 export const metadata = {
-    title: "ブログ | ProOneTech",
-    description: "ProOneTech焼却炉ソリューションの最新ニュースと情報。",
+    title: `ブログ | ${siteInfo.brand}`,
+    description: `${siteInfo.brand}焼却炉ソリューションの最新ニュースと情報。`,
 }
 
 export default function BlogPage() {
@@ -25,7 +26,7 @@ export default function BlogPage() {
                         ニュース・ブログ
                     </h1>
                     <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-                        ProOneTechの最新情報、ニュース、インサイトをお届けします。
+                        {siteInfo.brand}の最新情報、ニュース、インサイトをお届けします。
                     </p>
                 </div>
 
@@ -108,7 +109,7 @@ export default function BlogPage() {
                         </div>
                         <h3 className="text-xl font-semibold">投稿がありません</h3>
                         <p className="text-muted-foreground mt-2">
-                            ProOneTechの更新情報をお待ちください。
+                            {siteInfo.brand}の更新情報をお待ちください。
                         </p>
                     </div>
                 )}

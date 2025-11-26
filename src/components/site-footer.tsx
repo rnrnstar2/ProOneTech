@@ -125,7 +125,7 @@ export function SiteFooter() {
 
                 <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
                     <p className="text-center text-sm">
-                        © {currentYear} 株式会社ProOneTech. All rights reserved.
+                        © {currentYear} {siteInfo.company}（{siteInfo.brand}）. All rights reserved.
                     </p>
                     <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-sm">
                         <Link href="#" className="transition-colors hover:text-blue-400">

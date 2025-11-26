@@ -48,8 +48,8 @@ const offices = [
 ]
 
 export const metadata = {
-  title: "企業情報 | ProOneTech",
-  description: "坂川建設鉱業株式会社（プロワンテック）の会社概要と拠点情報。",
+  title: `企業情報 | ${siteInfo.brand}`,
+  description: `${siteInfo.company}（${siteInfo.brand}）の会社概要と拠点情報。`,
 }
 
 export default function CompanyPage() {
@@ -59,7 +59,7 @@ export default function CompanyPage() {
         <div className="absolute inset-0">
           <img
             src="/images/odajimusyo.jpeg"
-            alt="ProOneTech オフィス外観"
+            alt={`${siteInfo.brand} オフィス外観`}
             className="h-full w-full object-cover opacity-25 scale-105 blur-[2px]"
           />
         </div>

@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { siteInfo } from "@/lib/site-info"
 
 const rows: { label: string; value: string | string[] }[] = [
   { label: "販売業者", value: "坂川建設鉱業株式会社" },
@@ -37,8 +38,8 @@ const rows: { label: string; value: string | string[] }[] = [
 ]
 
 export const metadata = {
-  title: "特定商取引法に基づく表記 | ProOneTech",
-  description: "坂川建設鉱業株式会社（プロワンテック）の特定商取引法に基づく表記。",
+  title: `特定商取引法に基づく表記 | ${siteInfo.brand}`,
+  description: `${siteInfo.company}（${siteInfo.brand}）の特定商取引法に基づく表記。`,
 }
 
 export default function LegalPage() {

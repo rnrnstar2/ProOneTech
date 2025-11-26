@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { siteInfo } from "@/lib/site-info"
 
 const drawings = [
   {
@@ -15,7 +16,7 @@ const drawings = [
 ]
 
 export const metadata = {
-  title: "焼却炉図面 | ProOneTech",
+  title: `焼却炉図面 | ${siteInfo.brand}`,
   description: "外形図・内部構造図を閲覧できます。",
 }
 

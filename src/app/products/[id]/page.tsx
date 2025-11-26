@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
 import { ArrowLeft, Mail, Phone, ShoppingCart } from "lucide-react"
+import { siteInfo } from "@/lib/site-info"
 
 interface PageProps {
     params: Promise<{
@@ -30,8 +31,8 @@ export async function generateMetadata({ params }: PageProps) {
     }
 
     return {
-        title: `${product.title} | ProOneTech`,
-        description: product.excerpt || `Purchase ${product.title} - High quality incinerator parts from ProOneTech`,
+        title: `${product.title} | ${siteInfo.brand}`,
+        description: product.excerpt || `Purchase ${product.title} - 高品質な焼却炉部品（${siteInfo.brand})`,
     }
 }
 

@@ -3,11 +3,12 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { posts, products } from "@/lib/data"
+import { siteInfo } from "@/lib/site-info"
 import { ArrowRight, CheckCircle2, Flame, Shield, Wrench } from "lucide-react"
 
 export const metadata = {
-  title: "ProOneTech - 高性能無煙焼却炉",
-  description: "環境に優しい高効率焼却炉ソリューション。ProOneTechの最新技術で、クリーンな廃棄物処理を実現します。",
+  title: `${siteInfo.brand} - 高性能無煙焼却炉`,
+  description: `環境に優しい高効率焼却炉ソリューション。${siteInfo.brand}の最新技術で、クリーンな廃棄物処理を実現します。`,
 }
 
 export default function Home() {
@@ -48,7 +49,7 @@ export default function Home() {
         <div className="absolute inset-0">
           <img
             src="/images/焼却炉内部構造.jpg"
-            alt="ProOneTechの焼却炉内部構造"
+            alt={`${siteInfo.brand}の焼却炉内部構造`}
             className="h-full w-full object-cover opacity-30 scale-105 blur-[1px]"
           />
         </div>
@@ -59,7 +60,7 @@ export default function Home() {
             <span className="text-sm font-medium text-blue-400">最新の無煙焼却技術</span>
           </div>
           <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl max-w-4xl px-4">
-            ProOneTech <br />
+            {siteInfo.brand} <br />
             <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">無煙焼却炉</span>
           </h1>
           <p className="mt-6 sm:mt-8 max-w-2xl text-lg sm:text-xl md:text-2xl text-slate-300 leading-relaxed px-4">
@@ -135,7 +136,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-              ProOneTechの特長
+              {siteInfo.brand}の特長
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               最先端技術で、環境保護と効率性を両立
@@ -179,10 +180,10 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 items-center">
             <div className="space-y-6">
               <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                ProOneTechについて
+                {siteInfo.brand}について
               </h2>
               <p className="text-lg text-slate-300 leading-relaxed">
-                ProOneTechは、最新の廃棄物管理ニーズに対応する高効率焼却炉の専門メーカーです。
+                {siteInfo.brand}は、最新の廃棄物管理ニーズに対応する高効率焼却炉の専門メーカーです。
                 環境に配慮した持続可能で無煙、かつ耐久性に優れたソリューションを提供することが私たちの使命です。
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
@@ -209,7 +210,7 @@ export default function Home() {
             <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-slate-900 flex items-center justify-center border border-slate-700/60">
               <img
                 src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
-                alt="ProOneTech 焼却炉ビジュアル"
+                alt={`${siteInfo.brand} 焼却炉ビジュアル`}
                 className="max-h-full max-w-full object-contain"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent pointer-events-none"></div>
@@ -422,7 +423,7 @@ export default function Home() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-4xl font-bold tracking-tight mb-2">最新ニュース</h2>
-              <p className="text-lg text-muted-foreground">ProOneTechの最新情報をお届けします</p>
+              <p className="text-lg text-muted-foreground">{siteInfo.brand}の最新情報をお届けします</p>
             </div>
             <Button variant="ghost" asChild>
               <Link href="/blog">すべて見る →</Link>

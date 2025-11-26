@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { siteInfo } from "@/lib/site-info"
 
 const cautionLevels = [
   {
@@ -65,7 +66,7 @@ const troubles = [
 ]
 
 export const metadata = {
-  title: "取扱説明 | ProOneTech",
+  title: `取扱説明 | ${siteInfo.brand}`,
   description: "安全に無煙焼却炉をお使いいただくための重要なポイントをまとめました。",
 }
 

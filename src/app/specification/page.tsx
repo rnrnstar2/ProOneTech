@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+import { siteInfo } from "@/lib/site-info"
 
 const mainNumbers = [
   { label: "全高", value: "5,040 mm" },
@@ -31,7 +32,7 @@ const featureRows = [
 ]
 
 export const metadata = {
-  title: "本体仕様 | ProOneTech",
+  title: `本体仕様 | ${siteInfo.brand}`,
   description: "ベストファイヤー焼却炉の主要寸法・材質・特徴をまとめています。",
 }
 

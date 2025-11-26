@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { siteInfo } from "@/lib/site-info"
 
 const resourceLinks = [
   {
@@ -38,7 +39,7 @@ const highlights = [
 ]
 
 export const metadata = {
-  title: "焼却炉概要 | ProOneTech",
+  title: `焼却炉概要 | ${siteInfo.brand}`,
   description: "高性能・無煙焼却炉の概要と資料リンクをまとめました。",
 }
 
@@ -50,7 +51,7 @@ export default function SummaryPage() {
         <div className="absolute inset-0">
           <img
             src="/images/焼却炉-プレゼンテーション（169）.gif"
-            alt="ProOneTech 焼却炉プレゼンテーション"
+            alt={`${siteInfo.brand} 焼却炉プレゼンテーション`}
             className="h-full w-full object-cover opacity-30 blur-[1px] scale-105"
           />
         </div>

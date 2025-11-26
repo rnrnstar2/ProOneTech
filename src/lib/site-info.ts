@@ -1,5 +1,5 @@
 export const siteInfo = {
-  brand: "ProOneTech",
+  brand: "プロワンテック",
   company: "坂川建設鉱業株式会社",
   factory: {
     address: "〒714-1222 岡山県小田郡矢掛町西川面1390-1",

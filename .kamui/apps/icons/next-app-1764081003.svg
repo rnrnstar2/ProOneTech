@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="20" y1="20" x2="236" y2="236" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7ED" />
+      <stop offset="1" stop-color="#E2ECF9" />
+    </linearGradient>
+    <linearGradient id="sun" x1="64" y1="64" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9F43" />
+      <stop offset="1" stop-color="#FF6B4A" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.14" />
+    </filter>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="40" fill="url(#bg)" stroke="#0F172A" stroke-width="4" />
+  <circle cx="176" cy="88" r="52" fill="url(#sun)" stroke="#0F172A" stroke-width="4" />
+  <path d="M40 180c28-34 64-50 96-36s44 24 80 10" fill="none" stroke="#0F172A" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M64 196c22-18 42-24 64-16s42 22 68 12" fill="none" stroke="#334155" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="48" y="52" width="96" height="64" rx="14" fill="#0F172A" opacity="0.08" />
+  <rect x="48" y="52" width="96" height="64" rx="14" stroke="#0F172A" stroke-width="4" fill="white" />
+  <path d="M60 72h72M60 88h36" stroke="#0F172A" stroke-width="6" stroke-linecap="round" />
+  <path d="M104 104h28" stroke="#FF6B4A" stroke-width="6" stroke-linecap="round" />
+  <path d="M132 148l16-16 20 20 20-20 16 16" stroke="#FF9F43" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)" />
+  <rect x="68" y="146" width="76" height="36" rx="18" fill="#0F172A" filter="url(#shadow)" />
+  <text x="106" y="168" fill="#F8FAFC" font-family="'Inter', 'Helvetica', sans-serif" font-size="16" font-weight="700" text-anchor="middle">WP → NX</text>
+  <circle cx="196" cy="64" r="6" fill="#F8FAFC" stroke="#0F172A" stroke-width="2" />
+  <circle cx="60" cy="148" r="5" fill="#FF6B4A" />
+  <circle cx="210" cy="186" r="7" fill="#0F172A" opacity="0.12" />
+  <rect x="88" y="118" width="36" height="8" rx="4" fill="#E2ECF9" />
+</svg>

@@ -1,0 +1,177 @@
+export interface Product {
+  id: string;
+  title: string;
+  price: number;
+  content: string;
+  excerpt: string;
+  image: string;
+  category: string;
+  slug: string;
+  categories: string[];
+}
+
+export interface Post {
+  id: string;
+  title: string;
+  content: string;
+  excerpt: string;
+  date: string;
+  image: string;
+  slug: string;
+  categories: string[];
+  category: string;
+}
+
+export const products: Product[] = [
+  {
+    "id": "29",
+    "title": "【23】簡易投入扉",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【23】簡易投入扉",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.002.jpeg",
+    "price": 75000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  },
+  {
+    "id": "35",
+    "title": "【25】ロストル(一対)",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【25】ロストル(一対)",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.007.jpeg",
+    "price": 20000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  },
+  {
+    "id": "36",
+    "title": "【21】煙突トップ",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【21】煙突トップ",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.005.jpeg",
+    "price": 35000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  },
+  {
+    "id": "37",
+    "title": "【20】煙突_SUS t3",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【20】煙突_SUS t3",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.006.jpeg",
+    "price": 65000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  },
+  {
+    "id": "38",
+    "title": "【19】煙突台座",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【19】煙突台座",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.004.jpeg",
+    "price": 35000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  },
+  {
+    "id": "39",
+    "title": "【24】灰出し扉",
+    "content": "",
+    "excerpt": "",
+    "date": "2022-11-04 12:17:05",
+    "slug": "【24】灰出し扉",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2023/01/名称未設定4.003.jpeg",
+    "price": 30000,
+    "categories": [
+      "outofstock",
+      "simple",
+      "加工部品"
+    ],
+    "category": "加工部品"
+  }
+] as unknown as Product[];
+
+export const posts: Post[] = [
+  {
+    "id": "1",
+    "title": "投稿テスト１",
+    "content": "<!-- wp:columns {\"align\":\"full\"} -->\n<div class=\"wp-block-columns alignfull\"><!-- wp:column {\"width\":\"50%\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:50%\"><!-- wp:cover {\"customOverlayColor\":\"#f6f6f6\",\"minHeight\":600,\"isDark\":false} -->\n<div class=\"wp-block-cover is-light\" style=\"min-height:600px\"><span aria-hidden=\"true\" class=\"wp-block-cover__background has-background-dim-100 has-background-dim\" style=\"background-color:#f6f6f6\"></span><div class=\"wp-block-cover__inner-container\"><!-- wp:image {\"align\":\"center\",\"id\":571,\"sizeSlug\":\"medium\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image aligncenter size-medium\"><img src=\"https://s.w.org/patterns/files/2021/06/wire-sculpture-263x300.jpg\" alt=\"\" class=\"wp-image-571\"/></figure>\n<!-- /wp:image --></div></div>\n<!-- /wp:cover --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"verticalAlignment\":\"center\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"1em\",\"right\":\"1em\",\"bottom\":\"1em\",\"left\":\"1em\"}}}} -->\n<div class=\"wp-block-column is-vertically-aligned-center\" style=\"padding-top:1em;padding-right:1em;padding-bottom:1em;padding-left:1em\"><!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column {\"width\":\"320px\"} -->\n<div class=\"wp-block-column\" style=\"flex-basis:320px\"><!-- wp:paragraph {\"style\":{\"typography\":{\"lineHeight\":\"1.6\"}},\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\" style=\"line-height:1.6\"><strong>飛行機</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"style\":{\"typography\":{\"lineHeight\":\"1.6\"}},\"fontSize\":\"small\"} -->\n<p class=\"has-small-font-size\" style=\"line-height:1.6\">銅線と木の台。この作品は2008年末に制作しました。この作品では、飛行機という工業製品の重厚感だけでなく、飛行機に乗ったときに感じる雲のような浮遊感の両方を表現することを目指しました。</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"full\",\"style\":{\"color\":{\"text\":\"#000000\",\"background\":\"#ffffff\"}}} -->\n<div class=\"wp-block-columns alignfull has-text-color has-background\" style=\"background-color:#ffffff;color:#000000\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"style\":{\"typography\":{\"fontSize\":\"24px\",\"lineHeight\":\"1.3\"}}} -->\n<h3 style=\"font-size:24px;line-height:1.3\"><strong><a href=\"http://wordpress.org\">バーチャルツアー ↗</a></strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>ミュージアムのバーチャルツアーをどうぞ。学校やイベントに最適です。</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"style\":{\"typography\":{\"fontSize\":\"24px\",\"lineHeight\":\"1.3\"}}} -->\n<h3 style=\"font-size:24px;line-height:1.3\"><strong><a href=\"https://wordpress.org\">現在の展示 ↗</a></strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>最新の情報や、現在開催中の展覧会はこちらからご覧いただけます。</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:heading {\"level\":3,\"style\":{\"typography\":{\"fontSize\":\"24px\",\"lineHeight\":\"1.3\"}}} -->\n<h3 style=\"font-size:24px;line-height:1.3\"><strong><a href=\"https://wordpress.org\">お役立ち情報 ↗</a></strong></h3>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>営業時間、チケット料金、割引情報などをご紹介します。</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns -->\n<div class=\"wp-block-columns\"><!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:image {\"id\":525,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://s.w.org/patterns/files/2021/06/Iris-793x1024.jpg\" alt=\"\" class=\"wp-image-525\"/></figure>\n<!-- /wp:image -->\n\n<!-- wp:paragraph {\"style\":{\"typography\":{\"fontSize\":\"14px\"}}} -->\n<p style=\"font-size:14px\"><strong>あやめ (白)</strong><br>小川一真</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:column -->\n\n<!-- wp:column -->\n<div class=\"wp-block-column\"><!-- wp:spacer -->\n<div style=\"height:100px\" aria-hidden=\"true\" class=\"wp-block-spacer\"></div>\n<!-- /wp:spacer -->\n\n<!-- wp:paragraph {\"style\":{\"typography\":{\"fontSize\":\"14px\"}}} -->\n<p style=\"font-size:14px\"><strong>桜の花</strong><br>小川一真</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:image {\"id\":524,\"sizeSlug\":\"large\",\"linkDestination\":\"none\"} -->\n<figure class=\"wp-block-image size-large\"><img src=\"https://s.w.org/patterns/files/2021/06/Cherry-Blossom-707x1024.jpg\" alt=\"\" class=\"wp-image-524\"/></figure>\n<!-- /wp:image --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:columns {\"align\":\"wide\"} -->\n<div class=\"wp-block-columns alignwide\"><!-- wp:column {\"style\":{\"color\":{\"background\":\"#ffe97d\",\"text\":\"#000000\"},\"elements\":{\"link\":{\"color\":{\"text\":\"#000000\"}}},\"spacing\":{\"padding\":{\"top\":\"2em\",\"right\":\"2em\",\"bottom\":\"2em\",\"left\":\"2em\"}}}} -->\n<div class=\"wp-block-column has-text-color has-background has-link-color\" style=\"background-color:#ffe97d;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em\"><!-- wp:heading {\"style\":{\"typography\":{\"fontSize\":\"40px\"}}} -->\n<h2 id=\"single\" style=\"font-size:40px\"><strong>個人</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"style\":{\"typography\":{\"lineHeight\":\"1.5\"}},\"fontSize\":\"normal\"} -->\n<p class=\"has-normal-font-size\" style=\"line-height:1.5\"><strong>成長するコミュニティをサポート。</strong> </p>\n<!-- /wp:paragraph -->\n\n<!-- wp:separator {\"opacity\":\"css\",\"style\":{\"color\":{\"background\":\"#000000\"}},\"className\":\"is-style-wide\"} -->\n<hr class=\"wp-block-separator has-text-color has-css-opacity has-background is-style-wide\" style=\"background-color:#000000;color:#000000\"/>\n<!-- /wp:separator -->\n\n<!-- wp:list {\"fontSize\":\"normal\"} -->\n<ul class=\"has-normal-font-size\"><li>大人1名の一般入場料と会員割引</li><li>特別展ごとに1枚の無料チケット</li><li>1年に2枚のシングルユース用ゲストパス</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:buttons {\"align\":\"full\",\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"}} -->\n<div class=\"wp-block-buttons alignfull\"><!-- wp:button {\"textColor\":\"white\",\"width\":100,\"style\":{\"color\":{\"background\":\"#000000\"},\"border\":{\"radius\":0}}} -->\n<div class=\"wp-block-button has-custom-width wp-block-button__width-100\"><a class=\"wp-block-button__link has-white-color has-text-color has-background no-border-radius\" style=\"background-color:#000000\">$110/年</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"color\":{\"background\":\"#d1d1e1\",\"text\":\"#000000\"},\"elements\":{\"link\":{\"color\":{\"text\":\"#000000\"}}},\"spacing\":{\"padding\":{\"top\":\"2em\",\"right\":\"2em\",\"bottom\":\"2em\",\"left\":\"2em\"}}}} -->\n<div class=\"wp-block-column has-text-color has-background has-link-color\" style=\"background-color:#d1d1e1;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em\"><!-- wp:heading {\"style\":{\"typography\":{\"fontSize\":\"40px\"}}} -->\n<h2 id=\"family\" style=\"font-size:40px\"><strong>ファミリー</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"style\":{\"typography\":{\"lineHeight\":\"1.5\"}},\"fontSize\":\"normal\"} -->\n<p class=\"has-normal-font-size\" style=\"line-height:1.5\"><strong>特別展示を支援。</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:separator {\"opacity\":\"css\",\"className\":\"is-style-wide\"} -->\n<hr class=\"wp-block-separator has-css-opacity is-style-wide\"/>\n<!-- /wp:separator -->\n\n<!-- wp:list {\"fontSize\":\"normal\"} -->\n<ul class=\"has-normal-font-size\"><li>大人2名の一般入場料と会員割引</li><li>特別展ごとに4枚の無料チケット</li><li>1年に4枚のシングルユース用ゲストパス</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:buttons {\"align\":\"full\",\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"}} -->\n<div class=\"wp-block-buttons alignfull\"><!-- wp:button {\"textColor\":\"white\",\"width\":100,\"style\":{\"color\":{\"background\":\"#000000\"},\"border\":{\"radius\":0}},\"className\":\"is-style-fill\"} -->\n<div class=\"wp-block-button has-custom-width wp-block-button__width-100 is-style-fill\"><a class=\"wp-block-button__link has-white-color has-text-color has-background no-border-radius\" style=\"background-color:#000000\">$200/年</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"style\":{\"color\":{\"background\":\"#c0ebf1\",\"text\":\"#000000\"},\"elements\":{\"link\":{\"color\":{\"text\":\"#000000\"}}},\"spacing\":{\"padding\":{\"top\":\"2em\",\"right\":\"2em\",\"bottom\":\"2em\",\"left\":\"2em\"}}}} -->\n<div class=\"wp-block-column has-text-color has-background has-link-color\" style=\"background-color:#c0ebf1;color:#000000;padding-top:2em;padding-right:2em;padding-bottom:2em;padding-left:2em\"><!-- wp:heading {\"style\":{\"typography\":{\"fontSize\":\"40px\"}}} -->\n<h2 id=\"patron\" style=\"font-size:40px\"><strong>後援者</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph {\"fontSize\":\"normal\"} -->\n<p class=\"has-normal-font-size\"><strong>次のレベルの支援。</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:separator {\"opacity\":\"css\",\"className\":\"is-style-wide\"} -->\n<hr class=\"wp-block-separator has-css-opacity is-style-wide\"/>\n<!-- /wp:separator -->\n\n<!-- wp:list {\"fontSize\":\"normal\"} -->\n<ul class=\"has-normal-font-size\"><li>大人2名の一般入場料と会員割引</li><li>特別展ごとに5枚の無料チケット</li><li>1年に6枚のシングルユース用ゲストパス</li></ul>\n<!-- /wp:list -->\n\n<!-- wp:buttons {\"align\":\"full\",\"layout\":{\"type\":\"flex\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"}} -->\n<div class=\"wp-block-buttons alignfull\"><!-- wp:button {\"textColor\":\"white\",\"width\":100,\"style\":{\"color\":{\"background\":\"#000000\"},\"border\":{\"radius\":0}}} -->\n<div class=\"wp-block-button has-custom-width wp-block-button__width-100\"><a class=\"wp-block-button__link has-white-color has-text-color has-background no-border-radius\" style=\"background-color:#000000\">$400/年</a></div>\n<!-- /wp:button --></div>\n<!-- /wp:buttons --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->",
+    "excerpt": "",
+    "date": "2022-11-02 10:50:57",
+    "slug": "投稿テスト１",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/images.jpeg",
+    "categories": [
+      "お知らせ"
+    ],
+    "category": "お知らせ"
+  },
+  {
+    "id": "68",
+    "title": "投稿テスト2",
+    "content": "<!-- wp:paragraph -->\n<p>aaaa</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "",
+    "date": "2022-11-04 12:40:35",
+    "slug": "投稿テスト2",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/61f508a97dcd3abc674d50d242f6db2b.jpeg",
+    "categories": [
+      "特集記事"
+    ],
+    "category": "特集記事"
+  },
+  {
+    "id": "70",
+    "title": "投稿テスト3",
+    "content": "<!-- wp:paragraph -->\n<p>aaaa</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "",
+    "date": "2022-11-04 12:40:57",
+    "slug": "投稿テスト3",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/sansuirou-650n.jpeg",
+    "categories": [
+      "ピックアップ"
+    ],
+    "category": "ピックアップ"
+  },
+  {
+    "id": "72",
+    "title": "投稿テスト4",
+    "content": "<!-- wp:paragraph -->\n<p>fffff</p>\n<!-- /wp:paragraph -->",
+    "excerpt": "",
+    "date": "2022-11-04 12:41:17",
+    "slug": "投稿テスト4",
+    "image": "https://shoukyakuro.sakagawa-co.jp/wp-content/uploads/sites/3/2022/11/MG_3825-1.jpeg",
+    "categories": [
+      "ピックアップ"
+    ],
+    "category": "ピックアップ"
+  }
+];

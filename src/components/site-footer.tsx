@@ -1,0 +1,127 @@
+import Link from "next/link"
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"
+import { Separator } from "@/components/ui/separator"
+
+export function SiteFooter() {
+    const currentYear = new Date().getFullYear()
+
+    return (
+        <footer className="border-t bg-slate-900 text-slate-300">
+            <div className="container py-12 md:py-16">
+                <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+                    {/* 会社情報 */}
+                    <div className="space-y-4">
+                        <h3 className="text-lg font-bold text-white">株式会社ProOneTech</h3>
+                        <p className="text-sm leading-relaxed">
+                            最新の無煙焼却炉技術で、環境に優しく効率的な廃棄物管理ソリューションを提供します。
+                        </p>
+                        <div className="flex gap-3">
+                            <a href="#" className="rounded-full bg-slate-800 p-2 transition-colors hover:bg-blue-600" aria-label="Facebook">
+                                <Facebook className="h-4 w-4" />
+                            </a>
+                            <a href="#" className="rounded-full bg-slate-800 p-2 transition-colors hover:bg-blue-600" aria-label="Twitter">
+                                <Twitter className="h-4 w-4" />
+                            </a>
+                            <a href="#" className="rounded-full bg-slate-800 p-2 transition-colors hover:bg-blue-600" aria-label="LinkedIn">
+                                <Linkedin className="h-4 w-4" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* クイックリンク */}
+                    <div className="space-y-4">
+                        <h3 className="text-lg font-bold text-white">クイックリンク</h3>
+                        <ul className="space-y-2 text-sm">
+                            <li>
+                                <Link href="/" className="transition-colors hover:text-blue-400">
+                                    ホーム
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#about" className="transition-colors hover:text-blue-400">
+                                    会社概要
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/products" className="transition-colors hover:text-blue-400">
+                                    製品一覧
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/blog" className="transition-colors hover:text-blue-400">
+                                    ニュース・ブログ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#contact" className="transition-colors hover:text-blue-400">
+                                    お問い合わせ
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* 製品カテゴリ */}
+                    <div className="space-y-4">
+                        <h3 className="text-lg font-bold text-white">製品カテゴリ</h3>
+                        <ul className="space-y-3 text-sm">
+                            <li>
+                                <Link href="/products" className="transition-colors hover:text-blue-400">
+                                    焼却炉部品
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/products" className="transition-colors hover:text-blue-400">
+                                    煙突システム
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/products" className="transition-colors hover:text-blue-400">
+                                    アクセサリー
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* お問い合わせ先 */}
+                    <div className="space-y-4">
+                        <h3 className="text-lg font-bold text-white">お問い合わせ</h3>
+                        <ul className="space-y-3 text-sm">
+                            <li className="flex items-start gap-2">
+                                <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-blue-400" />
+                                <span>日本</span>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Phone className="h-4 w-4 flex-shrink-0 text-blue-400" />
+                                <a href="tel:+81-xxx-xxxx" className="transition-colors hover:text-blue-400">
+                                    +81-XXX-XXXX
+                                </a>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <Mail className="h-4 w-4 flex-shrink-0 text-blue-400" />
+                                <a href="mailto:info@proontech.com" className="transition-colors hover:text-blue-400">
+                                    info@proontech.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <Separator className="my-8 bg-slate-700" />
+
+                <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+                    <p className="text-center text-sm">
+                        © {currentYear} 株式会社ProOneTech. All rights reserved.
+                    </p>
+                    <div className="flex flex-wrap justify-center md:justify-end gap-4 sm:gap-6 text-sm">
+                        <Link href="#" className="transition-colors hover:text-blue-400">
+                            プライバシーポリシー
+                        </Link>
+                        <Link href="#" className="transition-colors hover:text-blue-400">
+                            利用規約
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    )
+}

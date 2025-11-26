@@ -50,9 +50,9 @@ export default function SummaryPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/焼却炉-プレゼンテーション（169）.gif"
-            alt={`${siteInfo.brand} 焼却炉プレゼンテーション`}
-            className="h-full w-full object-cover opacity-30 blur-[1px] scale-105"
+            src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
+            alt={`${siteInfo.brand} 焼却炉ビジュアル`}
+            className="h-full w-full object-cover opacity-30 scale-105"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/70 to-slate-900" />

@@ -48,9 +48,9 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16 sm:py-24 lg:py-32">
         <div className="absolute inset-0">
           <img
-            src="/images/焼却炉内部構造.jpg"
-            alt={`${siteInfo.brand}の焼却炉内部構造`}
-            className="h-full w-full object-cover opacity-30 scale-105 blur-[1px]"
+            src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
+            alt={`${siteInfo.brand} 焼却炉ビジュアル`}
+            className="h-full w-full object-cover opacity-40 scale-105"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900"></div>

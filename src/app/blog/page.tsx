@@ -89,7 +89,7 @@ export default function BlogPage() {
                             <CardFooter className="pt-0">
                                 <Button
                                     variant="link"
-                                    className="px-0 text-blue-600 font-semibold h-auto"
+                                    className="px-0 text-blue-800 font-semibold h-auto"
                                     asChild
                                 >
                                     <Link href={`/posts/${post.id}`}>

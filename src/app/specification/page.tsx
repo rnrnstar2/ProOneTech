@@ -41,7 +41,7 @@ export default function SpecificationPage() {
     <div className="min-h-screen bg-slate-50 text-slate-900">
       <section className="container py-12 sm:py-16 space-y-8">
         <div className="space-y-3">
-          <Badge variant="secondary" className="rounded-full px-3 py-1 bg-blue-50 text-blue-700 border-blue-100">
+          <Badge variant="secondary" className="rounded-full px-3 py-1 bg-blue-100 text-blue-800 border-blue-300">
             スペックシート
           </Badge>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">本体仕様</h1>
@@ -106,7 +106,7 @@ export default function SpecificationPage() {
                 </div>
               ))}
               <Separator />
-              <div className="rounded-lg bg-blue-50 text-blue-900 border border-blue-100 p-4">
+              <div className="rounded-lg bg-blue-100 text-blue-900 border border-blue-300 p-4">
                 <p className="text-sm font-semibold">ワンバッチ方式とは</p>
                 <p className="text-sm mt-1 leading-relaxed">
                   一重扉で炉内に6割まで投入し、燃焼中に扉を開けない運転方式。100℃以下で停止した後に再投入する設計です。

@@ -315,7 +315,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 lg:grid-cols-[1.2fr,1fr] items-center">
+          <div className="grid gap-6 lg:grid-cols-2 items-center">
             <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-100 flex items-center justify-center">
               <img
                 src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
@@ -323,20 +323,19 @@ export default function Home() {
                 className="h-full w-full object-contain"
               />
             </div>
-            <Card className="border-slate-200 h-full">
-              <CardHeader>
-                <CardTitle className="text-2xl">価格・部品のご案内</CardTitle>
-                <CardDescription>詳しい価格は担当までお問い合わせください。</CardDescription>
-              </CardHeader>
-              <CardFooter className="justify-end gap-3">
+            <div className="flex flex-col gap-4">
+              <p className="text-slate-700 leading-relaxed">
+                画像は参考価格表です。最新の価格は製品一覧またはお問い合わせからご確認ください。
+              </p>
+              <div className="flex gap-3 flex-wrap">
                 <Button asChild variant="outline">
                   <Link href="/products">部品一覧を見る</Link>
                 </Button>
                 <Button asChild>
                   <Link href="/contact">見積もり依頼</Link>
                 </Button>
-              </CardFooter>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </section>

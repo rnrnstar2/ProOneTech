@@ -335,11 +335,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 部品単価（WP「部品単価」より） */}
+      {/* 部品・オプション価格（WP「部品単価」より） */}
       <section className="section-py bg-white">
         <div className="container space-y-10">
           <div className="space-y-3 text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold">部品単価</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">部品・オプション価格</h2>
             <p className="text-muted-foreground max-w-3xl mx-auto">
               加工部品の一部をピックアップしています。詳細は製品一覧からご確認ください。
             </p>
@@ -349,8 +349,8 @@ export default function Home() {
             <div className="grid gap-4">
               <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
                 <img
-                  src="/images/スクリーンショット-2023-01-10-14.46.12.png"
-                  alt="部品一覧イメージ（価格表）"
+                  src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
+                  alt="部品価格表"
                   className="h-full w-full object-contain"
                 />
               </div>

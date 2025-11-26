@@ -486,7 +486,11 @@ export default function Home() {
             <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 px-10 h-16 text-lg rounded-full shadow-xl">
               お見積り依頼
             </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10 px-10 h-16 text-lg rounded-full">
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-white text-blue-50 hover:bg-white/10 px-10 h-16 text-lg rounded-full bg-white/5 backdrop-blur"
+            >
               サポートに連絡
             </Button>
           </div>

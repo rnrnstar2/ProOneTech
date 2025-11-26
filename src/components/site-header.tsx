@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
@@ -21,6 +22,14 @@ export function SiteHeader() {
             <div className="container flex h-16 items-center justify-between">
                 {/* ロゴ */}
                 <Link href="/" className="flex items-center space-x-2">
+                    <Image
+                        src="/images/pot.png"
+                        alt={`${siteInfo.brand} ロゴ`}
+                        width={32}
+                        height={32}
+                        className="h-8 w-8 rounded-md shadow-sm ring-1 ring-blue-200 bg-white"
+                        priority
+                    />
                     <span className="font-bold text-xl md:text-2xl">
                         {siteInfo.brand}
                     </span>

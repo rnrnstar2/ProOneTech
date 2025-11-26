@@ -36,7 +36,7 @@ export default function ProductsPage() {
                         <div className="relative w-full sm:w-[300px]">
                             <Input
                                 placeholder="製品を検索..."
-                                className="w-full pl-4 h-12 rounded-full border-blue-200 focus:border-blue-500"
+                                className="w-full pl-4 h-12 rounded-full border-blue-300 focus:border-blue-500"
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                             />
@@ -58,12 +58,12 @@ export default function ProductsPage() {
                 <div className="grid gap-6 sm:gap-8 md:gap-10 sm:grid-cols-2 lg:grid-cols-3">
                     {filteredProducts.map((product) => (
                         <Card key={product.id} className="group flex flex-col overflow-hidden border-0 shadow-md transition-all hover:shadow-xl hover:-translate-y-1 bg-white">
-                            <div className="relative aspect-square w-full overflow-hidden bg-slate-100">
+                            <div className="relative aspect-square w-full overflow-hidden bg-white border-b border-slate-100 flex items-center justify-center">
                                 {product.image && product.image !== '/placeholder.svg' ? (
                                     <img
                                         src={product.image}
                                         alt={product.title}
-                                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105 p-4"
                                     />
                                 ) : (
                                     <div className="flex h-full items-center justify-center text-slate-300">

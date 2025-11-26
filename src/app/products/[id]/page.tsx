@@ -66,12 +66,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
                 <div className="grid gap-8 lg:gap-12 lg:grid-cols-2">
                     {/* Product Image */}
                     <div className="space-y-4">
-                        <div className="relative aspect-square overflow-hidden rounded-2xl bg-slate-100 shadow-xl">
+                        <div className="relative aspect-square overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-xl flex items-center justify-center">
                             {product.image && product.image !== '/placeholder.svg' ? (
                                 <img
                                     src={product.image}
                                     alt={product.title}
-                                    className="h-full w-full object-cover"
+                                    className="h-full w-full object-contain p-6"
                                 />
                             ) : (
                                 <div className="flex h-full items-center justify-center text-slate-300">
@@ -84,7 +84,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                     {/* Product Info */}
                     <div className="space-y-6">
                         <div>
-                            <Badge className="mb-3 bg-blue-100 text-blue-700 hover:bg-blue-200">
+                            <Badge className="mb-3 bg-blue-100 text-blue-800 hover:bg-blue-200">
                                 {product.category}
                             </Badge>
                             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight lg:text-5xl">
@@ -93,7 +93,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                         </div>
 
                         <div className="flex items-baseline gap-4">
-                            <span className="text-5xl font-bold text-blue-600">
+                            <span className="text-5xl font-bold text-blue-800">
                                 ¥{product.price.toLocaleString()}
                             </span>
                             <span className="text-sm text-muted-foreground">(税込)</span>
@@ -164,12 +164,12 @@ export default async function ProductDetailPage({ params }: PageProps) {
                             {relatedProducts.map((relatedProduct) => (
                                 <Link key={relatedProduct.id} href={`/products/${relatedProduct.id}`}>
                                     <Card className="group overflow-hidden border-0 shadow-md transition-all hover:shadow-xl hover:-translate-y-1">
-                                        <div className="relative aspect-square w-full overflow-hidden bg-slate-100">
+                                        <div className="relative aspect-square w-full overflow-hidden bg-white border-b border-slate-100 flex items-center justify-center">
                                             {relatedProduct.image && relatedProduct.image !== '/placeholder.svg' ? (
                                                 <img
                                                     src={relatedProduct.image}
                                                     alt={relatedProduct.title}
-                                                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                                    className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-105 p-4"
                                                 />
                                             ) : (
                                                 <div className="flex h-full items-center justify-center text-slate-300">
@@ -179,7 +179,7 @@ export default async function ProductDetailPage({ params }: PageProps) {
                                         </div>
                                         <CardContent className="p-4">
                                             <h3 className="font-semibold line-clamp-1 mb-2">{relatedProduct.title}</h3>
-                                            <div className="text-xl font-bold text-blue-600">
+                                            <div className="text-xl font-bold text-blue-800">
                                                 ¥{relatedProduct.price.toLocaleString()}
                                             </div>
                                         </CardContent>

@@ -58,6 +58,11 @@ export function SiteFooter() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/legal" className="transition-colors hover:text-blue-400">
+                                    特定商取引法
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/drawing" className="transition-colors hover:text-blue-400">
                                     図面
                                 </Link>

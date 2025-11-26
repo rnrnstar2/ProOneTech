@@ -22,14 +22,17 @@ export function SiteHeader() {
             <div className="container flex h-16 items-center justify-between">
                 {/* ロゴ */}
                 <Link href="/" className="flex items-center space-x-2">
-                    <Image
-                        src="/images/pot.png"
-                        alt={`${siteInfo.brand} ロゴ`}
-                        width={32}
-                        height={32}
-                        className="h-8 w-8 rounded-md shadow-sm ring-1 ring-blue-200 bg-white"
-                        priority
-                    />
+                    <span className="sr-only">{siteInfo.brand}</span>
+                    <div className="h-10 w-10 flex items-center justify-center rounded-md bg-white shadow-sm ring-1 ring-blue-200">
+                        <Image
+                            src="/images/pot.png"
+                            alt={`${siteInfo.brand} ロゴ`}
+                            width={32}
+                            height={32}
+                            className="h-8 w-8 object-contain"
+                            priority
+                        />
+                    </div>
                 </Link>
 
                 {/* デスクトップナビゲーション */}

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description: `環境に優しい高性能無煙焼却炉ソリューションを提供する${siteInfo.brand}の公式サイト。`,
   icons: {
-    icon: "/favicon.ico"
+    icon: "/favicon.svg"
   }
 };
 

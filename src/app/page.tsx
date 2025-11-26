@@ -131,6 +131,87 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
+      <section className="section-py bg-slate-50">
+        <div className="container space-y-12">
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold">小型焼却炉の法律について</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              ベストファイヤーは「届出不要・構造基準適合」を重視した設計です。主要法令への適合ポイントをまとめました。
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-3">
+            <Card className="h-full border-blue-100 bg-white shadow-sm">
+              <CardHeader>
+                <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">ダイオキシン類対策特別措置法</div>
+                <CardTitle className="text-xl mt-2">届出不要枠内</CardTitle>
+                <CardDescription className="text-sm">
+                  火床面積0.5m²未満、焼却能力50kg/h未満のため届出・年1回測定の対象外。
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-muted-foreground">
+                <p>対象規模（0.5m²以上/50kg/h以上）を超える場合は届出と年1回の測定が義務。</p>
+                <p className="text-blue-700 font-semibold">ベストファイヤーは該当外。</p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full border-emerald-100 bg-white shadow-sm">
+              <CardHeader>
+                <div className="inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700">廃棄物処理法 構造基準</div>
+                <CardTitle className="text-xl mt-2">800℃以上で燃焼</CardTitle>
+                <CardDescription className="text-sm">
+                  燃焼ガス800℃以上・十分な送風・投入口遮断・温度計測・助燃装置を装備。
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-muted-foreground">
+                <p>多段燃焼＋強制送風＋温度センサ＋バーナーで基準をクリア。</p>
+              </CardContent>
+            </Card>
+
+            <Card className="h-full border-amber-100 bg-white shadow-sm">
+              <CardHeader>
+                <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700">消防法</div>
+                <CardTitle className="text-xl mt-2">据付面積 約1.2m²</CardTitle>
+                <CardDescription className="text-sm">
+                  2m²以上で届出義務。ベストファイヤーは対象外だが、保有距離を確保。
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-2 text-sm text-muted-foreground">
+                <p>設置距離の目安：上方2.5m以上 / 側方2.0m以上 / 前方3.0m以上 / 後方2.0m以上。</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            <Card className="border-slate-200">
+              <CardHeader>
+                <CardTitle>厚生省告示 第178号（平成9年）</CardTitle>
+                <CardDescription>燃焼方法に関する3つの遵守事項</CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-2">
+                <ul className="list-disc pl-5 space-y-1">
+                  <li>煙突先端以外から燃焼ガスを出さない。</li>
+                  <li>25％を超える黒煙や火炎を出さない。</li>
+                  <li>焼却灰・未燃物を飛散させない。</li>
+                </ul>
+                <p className="text-amber-700 font-semibold">違反は懲役・罰金の対象。適正運用が必須です。</p>
+              </CardContent>
+            </Card>
+            <Card className="border-slate-200">
+              <CardHeader>
+                <CardTitle>野外焼却（野焼き）の禁止</CardTitle>
+                <CardDescription>廃掃法 第16条の2</CardDescription>
+              </CardHeader>
+              <CardContent className="text-sm text-muted-foreground space-y-2">
+                <p>野焼きは違法です。罰則：5年以下の懲役または1,000万円以下の罰金（法人は最大1億円）。</p>
+                <p>適法な焼却炉で、基準に沿った運用を行ってください。</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* 会社概要セクション */}
       <section id="about" className="section-py bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <div className="container">
@@ -173,6 +254,47 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
           </div>
         </div>
+        </div>
+      </section>
+
+      {/* 部品単価（WP「部品単価」より） */}
+      <section className="section-py bg-white">
+        <div className="container space-y-10">
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold">部品単価</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              加工部品の一部をピックアップしています。詳細は製品一覧からご確認ください。
+            </p>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {products.slice(0, 3).map((product) => (
+              <Card key={product.id} className="flex flex-col overflow-hidden border-slate-200">
+                <div className="relative aspect-square w-full bg-slate-100">
+                  {product.image ? (
+                    <img src={product.image} alt={product.title} className="h-full w-full object-cover" />
+                  ) : (
+                    <div className="flex h-full items-center justify-center text-slate-300 text-5xl">📦</div>
+                  )}
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-lg line-clamp-1">{product.title}</CardTitle>
+                  <p className="text-2xl font-bold text-blue-700">¥{product.price.toLocaleString()}</p>
+                </CardHeader>
+                <CardContent className="mt-auto">
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href={`/products/${product.id}`}>詳細を見る</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="flex justify-center">
+            <Button asChild className="rounded-full">
+              <Link href="/products">部品一覧を見る</Link>
+            </Button>
+          </div>
         </div>
       </section>
 

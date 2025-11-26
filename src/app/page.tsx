@@ -321,11 +321,11 @@ export default function Home() {
               <Button size="lg" className="bg-white text-slate-900 hover:bg-slate-100 rounded-full" asChild>
                 <Link href="/summary">詳しく見る</Link>
               </Button>
-            </div>
+          </div>
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             <img
-              src="/images/焼却炉図面-1.jpg"
-              alt="ProOneTech焼却炉図面"
+              src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
+              alt="ProOneTech 焼却炉ビジュアル"
               className="absolute inset-0 w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>

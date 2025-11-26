@@ -101,10 +101,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 特長セクション */}
+            {/* 特長セクション */}
       <section className="section-py bg-white">
-        <div className="container">
-          <div className="text-center mb-16">
+        <div className="container space-y-12">
+          <div className="text-center">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
               {siteInfo.brand}の特長
             </h2>
@@ -112,52 +112,48 @@ export default function Home() {
               最先端技術で、環境保護と効率性を両立
             </p>
           </div>
-          <div className="grid gap-12 md:grid-cols-3">
-            <div className="flex flex-col items-center text-center group">
-              <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-50 to-blue-100 p-6 text-blue-800 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                <Flame className="h-12 w-12" />
+          <div className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr] items-center">
+            <div className="grid gap-12 md:grid-cols-3">
+              <div className="flex flex-col items-center text-center group">
+                <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 p-6 text-blue-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
+                  <Flame className="h-12 w-12" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">無煙技術</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  先進的な燃焼技術により、煙や有害物質の排出を最小限に抑え、厳しい環境基準をクリアします。
+                </p>
               </div>
-              <h3 className="text-2xl font-bold mb-3">無煙技術</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                先進的な燃焼技術により、煙や有害物質の排出を最小限に抑え、厳しい環境基準をクリアします。
-              </p>
+              <div className="flex flex-col items-center text-center group">
+                <div className="mb-6 rounded-2xl bg-gradient-to-br from-green-100 to-green-200 p-6 text-green-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
+                  <Shield className="h-12 w-12" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">高耐久性</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  高品質な素材を使用し、高温環境下でも長期間の連続運転に耐える設計です。
+                </p>
+              </div>
+              <div className="flex flex-col items-center text-center group">
+                <div className="mb-6 rounded-2xl bg-gradient-to-br from-orange-100 to-orange-200 p-6 text-orange-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
+                  <Wrench className="h-12 w-12" />
+                </div>
+                <h3 className="text-2xl font-bold mb-3">簡単メンテナンス</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  ユーザーフレンドリーな設計で、メンテナンス作業を簡素化し、ランニングコストを低減します。
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col items-center text-center group">
-              <div className="mb-6 rounded-2xl bg-gradient-to-br from-green-50 to-green-100 p-6 text-green-600 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                <Shield className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-3">高耐久性</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                高品質な素材を使用し、高温環境下でも長期間の連続運転に耐える設計です。
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center group">
-              <div className="mb-6 rounded-2xl bg-gradient-to-br from-orange-50 to-orange-100 p-6 text-orange-600 transition-all group-hover:scale-110 group-hover:shadow-xl">
-                <Wrench className="h-12 w-12" />
-              </div>
-              <h3 className="text-2xl font-bold mb-3">簡単メンテナンス</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                ユーザーフレンドリーな設計で、メンテナンス作業を簡素化し、ランニングコストを低減します。
-              </p>
+            <div className="relative w-full overflow-hidden rounded-3xl bg-white flex items-center justify-center border border-slate-200 shadow-lg">
+              <img
+                src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
+                alt={`${siteInfo.brand} 焼却炉ビジュアル`}
+                className="w-full h-auto max-h-[420px] object-contain"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ビジュアルセクション */}
-      <section className="section-py bg-gradient-to-br from-blue-50 via-white to-white">
-        <div className="container">
-          <div className="relative w-full overflow-hidden rounded-3xl bg-white flex items-center justify-center">
-            <img
-              src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
-              alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-              className="w-full h-auto max-h-[500px] object-contain"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
+{/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
       <section className="section-py bg-gray-50">
         <div className="container space-y-12">
           <div className="space-y-3 text-center">

@@ -345,12 +345,21 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr]">
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img
-                src="/images/スクリーンショット-2022-12-27-11.51.12.png"
-                alt="部品一覧イメージ"
-                className="w-full h-full object-cover"
-              />
+            <div className="grid gap-4">
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <img
+                  src="/images/スクリーンショット-2023-01-10-14.46.12.png"
+                  alt="部品一覧イメージ（価格表）"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <img
+                  src="/images/スクリーンショット-2022-12-13-15.03.00.png"
+                  alt="部品一覧イメージ（一覧表）"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
             <Card className="border-slate-200 h-full">
               <CardHeader>

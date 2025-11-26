@@ -3,12 +3,14 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from "next/link"
+import { siteInfo } from "@/lib/site-info"
 
 const contacts = [
-  { label: "電話", value: "0866-84-1311", href: "tel:0866-84-1311" },
-  { label: "FAX", value: "0866-84-1312" },
-  { label: "メール", value: "info@proonetech.com", href: "mailto:info@proonetech.com" },
-  { label: "住所", value: "〒714-1222 岡山県小田郡矢掛町西川面1390-1（プロワンテック工場）" },
+  { label: "電話", value: siteInfo.factory.tel, href: siteInfo.factory.telHref },
+  { label: "FAX", value: siteInfo.factory.fax },
+  { label: "メール", value: siteInfo.email.main, href: siteInfo.email.href },
+  { label: "住所", value: `${siteInfo.factory.address}（プロワンテック工場）` },
+  { label: "受付時間", value: siteInfo.hours },
 ]
 
 export const metadata = {
@@ -25,12 +27,12 @@ export default function ContactPage() {
             お問い合わせ
           </span>
           <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight">ご相談・お見積りの依頼</h1>
-          <p className="text-slate-200 text-lg leading-relaxed">
-            デモ・図面確認・仕様相談・価格のお問い合わせをお受けしています。フォームまたはお電話でお気軽にご連絡ください。
+              <p className="text-slate-200 text-lg leading-relaxed">
+            デモ・図面確認・仕様相談・価格のお問い合わせをお受けしています。フォームまたはお電話（{siteInfo.factory.tel}）でお気軽にご連絡ください。
           </p>
           <div className="flex gap-3 flex-wrap">
             <Button asChild className="rounded-full">
-              <a href="tel:0866-84-1311">電話する</a>
+              <a href={siteInfo.factory.telHref}>電話する</a>
             </Button>
             <Button
               asChild

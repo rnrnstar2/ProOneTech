@@ -2,9 +2,10 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { siteInfo } from "@/lib/site-info"
 
 const facts = [
-  { label: "社名", value: "坂川建設鉱業株式会社" },
+  { label: "社名", value: siteInfo.company },
   { label: "創業", value: "昭和48年3月" },
   { label: "代表取締役社長", value: "坂川晃一" },
   { label: "資本金", value: "3,000万円" },
@@ -15,6 +16,8 @@ const facts = [
       "土木、舗装、水道、解体、運送、産業廃棄物中間処理、造園、資材販売、リフォーム、薪・薪ストーブ、農業資材販売、焼却炉製造販売",
   },
   { label: "公式サイト", value: "http://sakagawa-co.jp", href: "http://sakagawa-co.jp" },
+  { label: "メール", value: siteInfo.email.main, href: siteInfo.email.href },
+  { label: "電話受付時間", value: siteInfo.hours },
 ]
 
 const offices = [
@@ -37,9 +40,9 @@ const offices = [
   {
     title: "プロワンテック（焼却炉工場）",
     name: "坂川建設鉱業株式会社 プロワンテック",
-    address: "〒714-1222 岡山県小田郡矢掛町西川面 1390-1",
-    tel: "0866-84-1311",
-    fax: "0866-84-1312",
+    address: siteInfo.factory.address,
+    tel: siteInfo.factory.tel,
+    fax: siteInfo.factory.fax,
     map: "https://maps.app.goo.gl/pQXoza1D9yESbbVv7",
   },
 ]

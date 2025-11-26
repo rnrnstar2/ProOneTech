@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"
 import { Separator } from "@/components/ui/separator"
+import { siteInfo } from "@/lib/site-info"
 
 export function SiteFooter() {
     const currentYear = new Date().getFullYear()
@@ -11,9 +12,9 @@ export function SiteFooter() {
                 <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
                     {/* 会社情報 */}
                     <div className="space-y-4">
-                        <h3 className="text-lg font-bold text-white">株式会社ProOneTech</h3>
+                        <h3 className="text-lg font-bold text-white">{siteInfo.company}（{siteInfo.brand}）</h3>
                         <p className="text-sm leading-relaxed">
-                            最新の無煙焼却炉技術で、環境に優しく効率的な廃棄物管理ソリューションを提供します。
+                            無煙焼却炉「ベストファイヤー」を製造するプロワンテック事業部。環境に優しく効率的な廃棄物管理ソリューションを提供します。
                         </p>
                         <div className="flex gap-3">
                             <a href="#" className="rounded-full bg-slate-800 p-2 transition-colors hover:bg-blue-600" aria-label="Facebook">
@@ -98,19 +99,23 @@ export function SiteFooter() {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-start gap-2">
                                 <MapPin className="mt-1 h-4 w-4 flex-shrink-0 text-blue-400" />
-                                <span>日本</span>
+                                <span>{siteInfo.factory.address}</span>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Phone className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                                <a href="tel:+81-xxx-xxxx" className="transition-colors hover:text-blue-400">
-                                    +81-XXX-XXXX
+                                <a href={siteInfo.factory.telHref} className="transition-colors hover:text-blue-400">
+                                    {siteInfo.factory.tel}
                                 </a>
                             </li>
                             <li className="flex items-center gap-2">
                                 <Mail className="h-4 w-4 flex-shrink-0 text-blue-400" />
-                                <a href="mailto:info@proontech.com" className="transition-colors hover:text-blue-400">
-                                    info@proontech.com
+                                <a href={siteInfo.email.href} className="transition-colors hover:text-blue-400">
+                                    {siteInfo.email.main}
                                 </a>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <span className="h-4 w-4 flex-shrink-0 text-blue-400 mt-0.5">🕒</span>
+                                <span>{siteInfo.hours}</span>
                             </li>
                         </ul>
                     </div>

@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ビジュアルセクション */
+      {/* ビジュアルセクション */}
       <section className="section-py bg-gradient-to-br from-blue-50 via-white to-white">
         <div className="container">
           <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl bg-white flex items-center justify-center border border-slate-200">
@@ -158,7 +158,7 @@ export default function Home() {
         </div>
       </section>
 
-{/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
+      {/* 法律対応セクション（WP「小型焼却炉の法律」より） */}
       <section className="section-py bg-gray-50">
         <div className="container space-y-12">
           <div className="space-y-3 text-center">

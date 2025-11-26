@@ -12,36 +12,6 @@ export const metadata = {
 }
 
 export default function Home() {
-  const partsList = [
-    "バーナー",
-    "バーナーコントロール基板",
-    "バーナー用ソレノイド",
-    "温度計熱電対",
-    "灯油タンク (90L)",
-    "灯油タンク (190L)",
-    "灯油タンク台",
-    "送油ホース (3m)",
-    "送風機 (1台)",
-    "送風パイプ内径 φ62.5mm (1m)",
-    "送風パイプ内径 φ32.4mm (1m)",
-    "風量調整ダンパー",
-    "操作ボックス",
-    "温調器",
-    "電磁接触器",
-    "リレー",
-    "漏電ブレーカー",
-    "安全ブレーカー",
-    "煙突台座 ステンレス",
-    "煙突 1.2m (ステンレス)",
-    "煙突トップ ステンレス",
-    "煙突トップ 鉄",
-    "投入扉 ステンレス",
-    "灰出し扉 ステンレス",
-    "ロストル一対",
-    "バーナーカバー",
-    "送風機カバー",
-  ]
-
   return (
     <div className="flex flex-col min-h-screen">
       {/* ヒーローセクション */}
@@ -346,35 +316,18 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr] items-start">
-            <div className="grid gap-4">
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
-                <img
-                  src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
-                  alt="部品価格表"
-                  className="h-full w-full object-contain"
-                />
-              </div>
-              <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
-                <img
-                  src="/images/スクリーンショット-2022-12-13-15.03.00.png"
-                  alt="部品一覧イメージ（一覧表）"
-                  className="h-full w-full object-contain"
-                />
-              </div>
+            <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-50 flex items-center justify-center">
+              <img
+                src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
+                alt="部品価格表"
+                className="h-full w-full object-contain"
+              />
             </div>
             <Card className="border-slate-200 h-full">
               <CardHeader>
-                <CardTitle className="text-2xl">代表的な部品リスト</CardTitle>
-                <CardDescription>価格はお問い合わせください。</CardDescription>
+                <CardTitle className="text-2xl">価格・部品のご案内</CardTitle>
+                <CardDescription>価格は都度お問い合わせください。詳細は製品一覧でご確認いただけます。</CardDescription>
               </CardHeader>
-              <CardContent className="grid sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-700">
-                {partsList.map((name) => (
-                  <div key={name} className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5" />
-                    <span className="leading-relaxed">{name}</span>
-                  </div>
-                ))}
-              </CardContent>
               <CardFooter className="justify-end gap-3">
                 <Button asChild variant="outline">
                   <Link href="/products">部品一覧を見る</Link>

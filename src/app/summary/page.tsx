@@ -52,10 +52,10 @@ export default function SummaryPage() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-            className="h-full w-full object-cover opacity-30 scale-105"
+            className="h-full w-full object-cover opacity-55 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 flex flex-col gap-8">
           <div className="inline-flex items-center gap-2 self-start rounded-full bg-blue-50 px-4 py-2 text-blue-700 border border-blue-200 backdrop-blur-sm">
             <span className="text-sm font-semibold">煙を抑える多段燃焼設計</span>

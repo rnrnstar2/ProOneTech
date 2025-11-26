@@ -20,10 +20,10 @@ export default function Home() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-            className="h-full w-full object-cover opacity-40 scale-105"
+            className="h-full w-full object-cover opacity-60 scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/80 to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/50 to-white"></div>
         <div className="container relative z-10 flex flex-col items-center text-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-blue-600/20 px-4 py-2 backdrop-blur-sm mb-4 sm:mb-6 border border-blue-400/30">
             <Flame className="h-4 w-4 text-blue-400" />

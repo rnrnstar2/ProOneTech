@@ -63,7 +63,7 @@ export default function CompanyPage() {
             className="h-full w-full object-cover opacity-25 scale-105 blur-[2px]"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
         <div className="container relative z-10 py-16 sm:py-20 lg:py-24 space-y-6 max-w-5xl">
           <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             企業情報

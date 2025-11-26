@@ -81,7 +81,7 @@ export default function InstructionPage() {
             className="h-full w-full object-cover opacity-20 blur-[1px] scale-105"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/85 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/25 via-white/55 to-white" />
         <div className="container relative z-10 py-14 sm:py-16 space-y-4 max-w-4xl">
           <Badge variant="secondary" className="bg-blue-50 text-blue-700 border-blue-200 px-3 py-1 rounded-full">
             取扱説明

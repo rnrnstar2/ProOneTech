@@ -20,7 +20,7 @@ export default function Home() {
           <img
             src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-            className="h-full w-full object-cover opacity-70 scale-105"
+            className="h-full w-full object-cover opacity-70 scale-105 object-left lg:object-center"
           />
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-white/10 via-white/30 to-white"></div>

@@ -76,7 +76,7 @@ export default function InstructionPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/スクリーンショット-2022-12-27-11.51.12.png"
+            src="/images/generated_image_030def62-c154-47b3-9d54-89e0c0fa2532.png"
             alt="操作盤イメージ"
             className="h-full w-full object-cover opacity-20 blur-[1px] scale-105"
           />

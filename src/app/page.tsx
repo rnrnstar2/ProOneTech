@@ -76,13 +76,25 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative rounded-3xl overflow-hidden bg-slate-800 shadow-2xl">
-              <img
-                src="/images/焼却炉-プレゼンテーション（169）.gif"
-                alt="焼却炉プレゼンテーション"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
+            <div className="rounded-3xl bg-slate-800/80 border border-slate-700 shadow-2xl p-6 space-y-4">
+              <div className="inline-flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-200 border border-blue-400/30">
+                ベストファイヤー HBF601-BL-Ⅱ型
+              </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {[
+                  "煙の出ない高性能・消炎構造",
+                  "届出不要（小型枠）",
+                  "高い燃焼効率と強制送風",
+                  "国内製造・構造基準適合補償",
+                  "廃プラ対応の多段燃焼",
+                  "温度センサ＋助燃装置で安全運転",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-blue-300 mt-0.5" />
+                    <span className="text-sm text-slate-100 leading-relaxed">{item}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

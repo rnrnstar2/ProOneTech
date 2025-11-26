@@ -11,6 +11,36 @@ export const metadata = {
 }
 
 export default function Home() {
+  const partsList = [
+    "バーナー",
+    "バーナーコントロール基板",
+    "バーナー用ソレノイド",
+    "温度計熱電対",
+    "灯油タンク (90L)",
+    "灯油タンク (190L)",
+    "灯油タンク台",
+    "送油ホース (3m)",
+    "送風機 (1台)",
+    "送風パイプ内径 φ62.5mm (1m)",
+    "送風パイプ内径 φ32.4mm (1m)",
+    "風量調整ダンパー",
+    "操作ボックス",
+    "温調器",
+    "電磁接触器",
+    "リレー",
+    "漏電ブレーカー",
+    "安全ブレーカー",
+    "煙突台座 ステンレス",
+    "煙突 1.2m (ステンレス)",
+    "煙突トップ ステンレス",
+    "煙突トップ 鉄",
+    "投入扉 ステンレス",
+    "灰出し扉 ステンレス",
+    "ロストル一対",
+    "バーナーカバー",
+    "送風機カバー",
+  ]
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* ヒーローセクション */}
@@ -312,6 +342,38 @@ export default function Home() {
             <p className="text-muted-foreground max-w-3xl mx-auto">
               加工部品の一部をピックアップしています。詳細は製品一覧からご確認ください。
             </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.1fr,1.2fr]">
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img
+                src="/images/スクリーンショット-2022-12-27-11.51.12.png"
+                alt="部品一覧イメージ"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <Card className="border-slate-200 h-full">
+              <CardHeader>
+                <CardTitle className="text-2xl">代表的な部品リスト</CardTitle>
+                <CardDescription>価格はお問い合わせください。</CardDescription>
+              </CardHeader>
+              <CardContent className="grid sm:grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-700">
+                {partsList.map((name) => (
+                  <div key={name} className="flex items-start gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 mt-0.5" />
+                    <span className="leading-relaxed">{name}</span>
+                  </div>
+                ))}
+              </CardContent>
+              <CardFooter className="justify-end gap-3">
+                <Button asChild variant="outline">
+                  <Link href="/products">部品一覧を見る</Link>
+                </Button>
+                <Button asChild>
+                  <Link href="/contact">見積もり依頼</Link>
+                </Button>
+              </CardFooter>
+            </Card>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

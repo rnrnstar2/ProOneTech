@@ -305,6 +305,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* 部品・オプション価格（WP「部品単価」より） */}
+      <section className="section-py bg-white">
+        <div className="container space-y-10">
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold">部品・オプション価格</h2>
+            <p className="text-muted-foreground max-w-3xl mx-auto">
+              加工部品の価格表イメージです。最新価格はお問い合わせください。
+            </p>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-[1.2fr,1fr] items-center">
+            <div className="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-slate-200 shadow-sm bg-gray-100 flex items-center justify-center">
+              <img
+                src="/images/generated_image_3093a58a-6f9b-491a-827f-24a4d5c7e461.png"
+                alt="部品価格表"
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <Card className="border-slate-200 h-full">
+              <CardHeader>
+                <CardTitle className="text-2xl">価格・部品のご案内</CardTitle>
+                <CardDescription>詳しい価格は担当までお問い合わせください。</CardDescription>
+              </CardHeader>
+              <CardFooter className="justify-end gap-3">
+                <Button asChild variant="outline">
+                  <Link href="/products">部品一覧を見る</Link>
+                </Button>
+                <Button asChild>
+                  <Link href="/contact">見積もり依頼</Link>
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* 最新ニュース */}
       <section id="blog" className="section-py bg-gray-50">
         <div className="container">

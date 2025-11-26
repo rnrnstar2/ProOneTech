@@ -53,8 +53,8 @@ export default function Home() {
       {/* 事業再構築セクション（WP「TOP」より） */}
       <section className="section-py bg-white text-slate-900">
         <div className="container">
-          <div className="grid gap-8 lg:grid-cols-2 items-center">
-            <div className="space-y-4">
+          <div className="grid gap-8 lg:gap-12 lg:grid-cols-2 items-center">
+            <div className="space-y-6 order-2 lg:order-1">
               <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-sm border border-blue-300 text-blue-800">
                 R2 事業再構築
               </div>
@@ -63,46 +63,56 @@ export default function Home() {
               </h2>
               <p className="text-slate-600 leading-relaxed">
                 ベストファイヤー HBF601-BL-Ⅱ型。届出不要・高い燃焼効率・国内製造・構造基準適合補償・廃プラ対応。
-                既存サイトのビジュアル（WPエクスポート）を反映しました。
+                最先端の無煙焼却技術で環境に配慮した廃棄物処理を実現します。
               </p>
+              <div className="rounded-3xl bg-gradient-to-br from-blue-50 to-white border border-blue-200 shadow-sm p-6 space-y-4">
+                <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 border border-blue-300">
+                  ベストファイヤー HBF601-BL-Ⅱ型
+                </div>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {[
+                    "煙の出ない高性能・消炎構造",
+                    "届出不要（小型枠）",
+                    "高い燃焼効率と強制送風",
+                    "国内製造・構造基準適合補償",
+                    "廃プラ対応の多段燃焼",
+                    "温度センサ＋助燃装置で安全運転",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-2">
+                      <CheckCircle2 className="h-5 w-5 text-blue-600 mt-0.5" />
+                      <span className="text-sm text-slate-700 leading-relaxed">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
               <div className="flex flex-wrap gap-3">
-                <Button asChild className="rounded-full bg-blue-600 text-white hover:bg-blue-700">
+                <Button asChild className="rounded-full bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg transition-all">
                   <Link href="/summary">概要を見る</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
+                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-50">
                   <Link href="/instruction">取扱説明</Link>
                 </Button>
-                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-100">
+                <Button asChild variant="outline" className="rounded-full border-blue-300 text-blue-800 hover:bg-blue-50">
                   <Link href="/drawing">図面</Link>
                 </Button>
               </div>
             </div>
-            <div className="rounded-3xl bg-white border border-slate-200 shadow-lg p-6 space-y-4">
-              <div className="inline-flex items-center gap-2 rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-800 border border-blue-300">
-                ベストファイヤー HBF601-BL-Ⅱ型
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {[
-                  "煙の出ない高性能・消炎構造",
-                  "届出不要（小型枠）",
-                  "高い燃焼効率と強制送風",
-                  "国内製造・構造基準適合補償",
-                  "廃プラ対応の多段燃焼",
-                  "温度センサ＋助燃装置で安全運転",
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-blue-800 mt-0.5" />
-                    <span className="text-sm text-slate-700 leading-relaxed">{item}</span>
-                  </div>
-                ))}
+            <div className="relative order-1 lg:order-2">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-slate-50 to-white">
+                <img
+                  src="/images/product-bestfire.png"
+                  alt="ベストファイヤー HBF601-BL-Ⅱ型 無煙焼却炉"
+                  className="h-full w-full object-cover"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-            {/* 特長セクション */}
-      <section className="section-py bg-white">
+      {/* 特長セクション */}
+      <section className="section-py bg-gradient-to-b from-white via-blue-50/30 to-white">
         <div className="container space-y-12">
           <div className="text-center">
             <h2 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
@@ -112,8 +122,15 @@ export default function Home() {
               最先端技術で、環境保護と効率性を両立
             </p>
           </div>
-          <div className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr] items-center">
-            <div className="grid gap-12 md:grid-cols-3">
+          <div className="space-y-8">
+            <div className="relative w-full overflow-hidden flex items-center justify-center">
+              <img
+                src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
+                alt={`${siteInfo.brand} 焼却炉ビジュアル`}
+                className="w-full h-auto max-h-[420px] object-contain"
+              />
+            </div>
+            <div className="grid gap-8 md:grid-cols-3">
               <div className="flex flex-col items-center text-center group">
                 <div className="mb-6 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 p-6 text-blue-700 transition-all group-hover:scale-110 group-hover:shadow-xl">
                   <Flame className="h-12 w-12" />
@@ -142,13 +159,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="relative w-full overflow-hidden flex items-center justify-center">
-              <img
-                src="/images/generated_image_d1b06f37-f294-4fbb-9e87-8205593c3e6d.png"
-                alt={`${siteInfo.brand} 焼却炉ビジュアル`}
-                className="w-full h-auto max-h-[420px] object-contain"
-              />
-            </div>
           </div>
         </div>
       </section>
@@ -161,6 +171,17 @@ export default function Home() {
             <p className="text-muted-foreground max-w-3xl mx-auto">
               ベストファイヤーは「届出不要・構造基準適合」を重視した設計です。主要法令への適合ポイントをまとめました。
             </p>
+          </div>
+
+          <div className="relative max-w-4xl mx-auto mb-12">
+            <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 rounded-3xl blur-2xl opacity-20"></div>
+            <div className="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img
+                src="/images/legal-compliance.png"
+                alt="法律対応と認証"
+                className="h-full w-full object-cover"
+              />
+            </div>
           </div>
 
           <div className="grid gap-6 lg:grid-cols-3">

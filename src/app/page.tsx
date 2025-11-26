@@ -305,8 +305,7 @@ export default function Home() {
         </div>
       </section>
 
-            {/* 最新ニュース */
-{/* 最新ニュース */}
+      {/* 最新ニュース */}
       <section id="blog" className="section-py bg-gray-50">
         <div className="container">
           <div className="flex items-center justify-between mb-12">

@@ -155,7 +155,7 @@ export const posts: Post[] = [
     "excerpt": "焼却炉の寿命を最大限に延ばす保守管理のポイントを詳しく解説。日常点検、定期点検、消耗部品の交換計画、運転記録管理など、実務に役立つメンテナンス情報をまとめました。",
     "date": "2025-01-25 14:00:00",
     "slug": "incinerator-maintenance-guide",
-    "image": "/images/MG_3825-1.jpeg",
+    "image": "/images/DSC_0715_R.JPG",
     "categories": [
       "メンテナンス"
     ],
@@ -168,7 +168,7 @@ export const posts: Post[] = [
     "excerpt": "中小製造業における焼却炉導入の成功事例を詳しく紹介。導入前の課題、選定プロセス、コスト削減効果、業務効率化のメリットなど、実際のデータに基づいた具体的な成果を解説します。",
     "date": "2025-02-01 11:00:00",
     "slug": "small-business-incinerator-case-study",
-    "image": "/images/sansuirou-650n.jpeg",
+    "image": "/images/DSC_0712_R.JPG",
     "categories": [
       "導入事例"
     ],
